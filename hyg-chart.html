@@ -35,7 +35,7 @@ new Chart(ctx,{type:'line',
     {label:'HYG高收益债($)',data:hyg,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
     {label:'SOX÷190(对标)',data:soxS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y'}
   ]},
-  options:{responsive:true,maintainAspectRatio:false,
+  options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
     plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},
     scales:{
       x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},
