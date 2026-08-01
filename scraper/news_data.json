@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-01T22:51:27.639176",
+  "generated_at": "2026-08-01T23:21:40.696861",
   "total": 123,
-  "bullish": 23,
-  "bearish": 25,
-  "neutral": 75,
+  "bullish": 24,
+  "bearish": 26,
+  "neutral": 73,
   "bias": -0.02,
   "articles": [
     {
@@ -42,7 +42,7 @@
       "sentiment": "bear"
     },
     {
-      "title": "KOSPI Triggers Historic Back-to-Back Circuit Breakers as AI Memory Rally Faces Structural Reckoning - Tech Times",
+      "title": "KOSPI Triggers Historic Back-to-Back Circuit Breakers as AI Memory Rally Faces Structural Reckoning - techtimes.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYmNNcDYxSWlhXzhmZlFtRXFpOFlUdVcxclJkUTZUb2NVVS1rUTFLSVFpbVdqcXZaSHByZzd3WGJFZTlzWmRTeDdrNzZHQmprZThXZldjSkNtWHE5VWJkM1o1MDFUbXY1YkZGUkdpSWs2czNrb1E1ZTNidUF2cjhjTEJ5bTZNVTZHNHFaNnRsNFVkamlfb2x4N2JyVzJZSjRDZzVGa0laVlhWcFRCQXF0YllZVUozOFNDSERNelRQSVNoR0psZXY4YW9kc2ZJN0w3Z0Y5MGRrVkFXUVZ3MWJPS2hB?oc=5",
       "time": "Wed, 29 Jul 2026 11:18:17",
@@ -182,7 +182,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "TAIEX takes 3rd-largest hit on record - taipeitimes.com",
+      "title": "TAIEX takes 3rd-largest hit on record - Taipei Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBaV19fQlVJNGZPOGlhUkNvVk5WTElwdFhKVnJYS09fcEZ4M0hyUXhEVVRWQnJ0ZkNQY2lWV2toaXk5eS1zWklMX2lkMGg5SWRQM2pyYW5DWGlId2hic2Z0Yks5dVhBeWhzdzZpWXJDUWdzNGNPS1E?oc=5",
       "time": "Tue, 28 Jul 2026 16:00:00",
@@ -287,13 +287,6 @@
       "sentiment": "bear"
     },
     {
-      "title": "Marvell Technology, Himax, and IPG Photonics Stocks Trade Down, What You Need To Know - TradingView",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQeXpDdTAtcVpGNnRZOVBJYlBCbjVpNl9aaGoxR0JVTWZnMFp1LUtZQ1NvcWQ0QWZOcVA0dU9IdFlXVnNzcUEzWVlPd2tneE5oUWZNbVpnNmVSWG1XUVpTYld2WWNodlk1RFhFVURZcjA3X1JZbmhDVHlLY29vQmFmMWtGNjFhcWRnT2VDM3d5bGRiU25DZE9ZRHlPN1k4RUZBOE02NEJiaTJpTkZpR1d0cTlCc3ZjbElRR3FGdzEzV0UyVjhTX25CZlk5UUhGYWluVk1VaTd4bDVSS2c?oc=5",
-      "time": "Tue, 23 Jun 2026 07:00:00",
-      "sentiment": "neutral"
-    },
-    {
       "title": "반도체 쏠림·레버리지 역습에 와르르…개미는 8.5조 역대 최대 사들여 - 서울경제",
       "source": "Google News KR",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xaUdEV0Qxa2JJd1FuMWc2OVN0amttM2RwQjdrMHcxU0pRQ0pHTGFHZVRDVEc4Z3Fnd2tqNi1BeFVQbkVWZnFrSHZTR3NST0VFMWfSAVNBVV95cUxObmJMZXV1VW9QY0ZfLThDWHFHWjlvcjk1bmhVUWVKZ053UFJpOHJCcnFjd3BFNHp2SzZMUG1JYlJVSFFVcEpSUWlPNm5ZNmJVRk42aw?oc=5",
@@ -354,6 +347,13 @@
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QUGo2UzB4Z0IwNTJ2YkxiZ1FoMmJ4MWFuWmlWUjhfOFBPNWx3NjJOX3N1SXN1UUNORkpicWNCbU40ZFppRjRzVHBEc2RUT3Rvb013?oc=5",
       "time": "Thu, 30 Jul 2026 20:17:02",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "微软Meta财报“修复”AI信仰，芯片指数盘中创4月来最大涨幅，数据中心产业链爆发 - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvcmFOaVBHSlgwZl8wY0YzQlRGVVZ3ZHpSUl8tR0EwY2M5RlVnS1FUMU9OSDhackw1c3hPR1FHTHBJQmxuNGVCQlhFVDByUTFyTnFv?oc=5",
+      "time": "Thu, 30 Jul 2026 20:00:07",
       "sentiment": "neutral"
     }
   ],
