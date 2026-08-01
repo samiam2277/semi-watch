@@ -8,26 +8,7 @@
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style>
-<script>
-// Auto-load fresh data from chart_data.json
-(function() {
-  var chartId = document.currentScript.getAttribute('data-chart');
-  if (!chartId) return;
-  fetch('chart_data.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      var c = d[chartId];
-      if (!c) return;
-      window._chartData = c;
-      // Dispatch event for chart to pick up
-      window.dispatchEvent(new CustomEvent('chartDataLoaded', {detail: c}));
-    })
-    .catch(function(e) { console.log('Chart data load failed, using defaults:', e); });
-})();
-</script>
-
-</head><body>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -45,7 +26,8 @@
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
-var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
+var labels=['1月','2月','3月','4月','5月上','5月下','6月初','6月中','6月下','7月初','7/8','7/14','7/18','7/22','7/25','7/28','7/29','7/30','7/31'];
+var hyg=[77.2,77.0,77.5,78.0,78.3,78.5,78.8,78.6,78.2,77.8,77.2,76.5,76.0,75.5,75.0,74.2,73.8,74.5,74.5];
 var sox=[7575,7200,7080,8300,10300,11600,12000,14342,13204,13353,12301,13171,11768,14635,13482,10447,10447,11303,11800];
 var soxS=sox.map(function(v){{return v/190}});
 new Chart(ctx,{type:'line',

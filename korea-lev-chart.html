@@ -8,26 +8,7 @@
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style>
-<script>
-// Auto-load fresh data from chart_data.json
-(function() {
-  var chartId = document.currentScript.getAttribute('data-chart');
-  if (!chartId) return;
-  fetch('chart_data.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      var c = d[chartId];
-      if (!c) return;
-      window._chartData = c;
-      // Dispatch event for chart to pick up
-      window.dispatchEvent(new CustomEvent('chartDataLoaded', {detail: c}));
-    })
-    .catch(function(e) { console.log('Chart data load failed, using defaults:', e); });
-})();
-</script>
-
-</head><body>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -49,7 +30,8 @@ JP摩根:去杠杆<span style="color:#3fb950">90%+</span> | HSBC:<span style="co
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
-var labels=["4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22", "6/24", "6/28", "7/3", "7/8", "7/13", "7/17", "7/20", "7/22", "7/24", "7/28", "7/29", "7/30", "7/31"]
+var labels=['4/1','4/15','5/1','5/15','5/27','6/5','6/12','6/18','6/22','6/24','6/28','7/3','7/8','7/13','7/17','7/20','7/22','7/24','7/28','7/29','7/30','7/31'];
+var credit=[30.3,31,32,33,34.2,35.5,36.5,37.5,38.2,38.63,37.8,36.5,35,33.8,33.2,33,32.8,32.67,32.5,32.4,33,32];
 var etfAUM=[0,0,2,3.5,4.9,7.5,10.5,13.5,15,15.93,14.5,12,9.5,9.34,8,7,6.5,5.5,4.8,4.5,5,5];
 var kospi=[7500,8200,8500,8700,9000,9100,9200,9350,9385,9200,8600,8000,7500,6500,6200,6100,6000,6000,5563,5663,5593,6595];
 var kospiS=kospi.map(function(v){{return v/40}});

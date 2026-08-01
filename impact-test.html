@@ -11,25 +11,6 @@ body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margi
 .diverge{font-size:9px;margin-top:2px}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
 </style>
-
-<script>
-// Auto-load fresh data from chart_data.json
-(function() {
-  var chartId = document.currentScript.getAttribute('data-chart');
-  if (!chartId) return;
-  fetch('chart_data.json')
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      var c = d[chartId];
-      if (!c) return;
-      window._chartData = c;
-      // Dispatch event for chart to pick up
-      window.dispatchEvent(new CustomEvent('chartDataLoaded', {detail: c}));
-    })
-    .catch(function(e) { console.log('Chart data load failed, using defaults:', e); });
-})();
-</script>
-
 </head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
@@ -72,7 +53,8 @@ SOX+8% 海力士+30% 涨停<br>
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
-var labels=["7/8", "7/9", "7/10", "7/13", "7/14", "7/15", "7/16", "7/17", "7/20", "7/21", "7/22", "7/23", "7/24", "7/27", "7/28", "7/29", "7/30", "7/31"]
+var labels=['7/8','7/9','7/10','7/13','7/14','7/15','7/16','7/17','7/20','7/21','7/22','7/23','7/24','7/27','7/28','7/29','7/30','7/31'];
+var sox=[4.9,0.1,-1.9,-2,7.9,1.5,-0.6,-2,1.4,3,6.4,2,-7.9,-1,-3,-5.3,8.2,4];
 var sk=[3,0,-2,-5,5,2,-3,-4,2,4,6,2,-8,-10,-11,-9,12,30];
 var bias=[0.3,0.1,-0.2,-0.4,0.3,0.2,-0.1,-0.3,0.1,0.4,0.5,0.1,-0.6,-0.5,-0.7,-0.6,0.6,0.7];
 var evts=['外资转买','小幅净买','ADR上市','熔断','大反弹','继续反弹','回落','CXMT恐慌','四连买D1','四连买D2','GOOGL博弈','GOOGL盘后','FCF恐慌!','CXMT上市','DUV+熔断!','FOMC鹰派','暴力反弹!','涨停!'];
