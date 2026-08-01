@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:0}</style>
+</head><body>
+<canvas id="c" style="width:100%;height:260px"></canvas>
+<script>
+setTimeout(function(){
+var ctx=document.getElementById('c').getContext('2d');
+var labels=['5/1','5/15','6/1','6/15','7/1','7/8','7/15','7/22','7/24','7/28','7/29','7/30','7/31'];
+// Software ETF (IGV) proxy + Mag7 aggregate signals
+var igv=[105,108,112,115,118,122,126,130,128,124,120,128,132];
+var mag7=[100,103,108,112,115,110,106,102,98,95,92,105,110];
+// Semiconductor SOXX for comparison
+var soxx=[95,105,118,130,125,130,120,115,108,95,90,105,112];
+new Chart(ctx,{
+  type:'line',
+  data:{
+    labels:labels,
+    datasets:[
+      {label:'软件ETF IGV(估算)',data:igv,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5},
+      {label:'Mag7加权(估算)',data:mag7,borderColor:'#a371f7',tension:0.4,pointRadius:2,borderWidth:2.5,borderDash:[5,3]},
+      {label:'半导体SOXX(估算)',data:soxx,borderColor:'#58a6ff',tension:0.4,pointRadius:2,borderWidth:2,borderDash:[3,3]}
+    ]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    interaction:{intersect:false,mode:'index'},
+    plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},
+    scales:{
+      x:{ticks:{color:'#8b949e',font:{size:8}},grid:{display:false}},
+      y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'归一化指数(5/1=100)',color:'#8b949e',font:{size:8}}}
+    }
+  }
+});
+},300);
+</script>
+</body></html>

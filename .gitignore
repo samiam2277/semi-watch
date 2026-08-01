@@ -13,3 +13,4 @@ tsconfig*.json
 tsconfig*.tsbuildinfo
 vite.config.ts
 package.json
+node_modules
