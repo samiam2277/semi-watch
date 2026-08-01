@@ -11,15 +11,17 @@
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
-<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">📐 四阶段解读</div>
-<div class="sig sig-g"><b>5月 疯狂流入</b><br>SOXX+SMH周均+$20亿<br>杠杆ETF上市 散户涌入</div>
-<div class="sig sig-r"><b>6月中 流入减速→转出</b><br>对冲基金配置达24%极值<br>主动基金开始减仓</div>
-<div class="sig sig-r"><b>7月 暴跌+逆势定投</b><br>SOX-25%但ETF仍+$90亿<br>"越跌越买" 养老金定投</div>
-<div class="sig sig-g"><b>7/30-31 暴力回补</b><br>单日流入创纪录<br>主动基金试探性回场</div>
+<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">流入🟢 vs 流出🔴</div>
+<div class="sig sig-g"><b>5月 机构疯狂涌入</b><br>周均净流入+$20亿<br>5/8单周+$22亿</div>
+<div class="sig sig-r"><b>6/22-26 首次周流出</b><br>−$5亿 主动基金开始减仓</div>
+<div class="sig sig-r"><b>7/3 加速流出</b><br>−$10亿 EPFR科技−$93亿<br>对冲基金连卖4周</div>
+<div class="sig sig-g"><b>7/8 史上最大流入!</b><br>+$54亿单周(养老金定投)<br>暴跌中逆势接盘</div>
+<div class="sig sig-r"><b>7/24 恐慌流出</b><br>−$28亿 全球半导体恐慌<br>KOSPI连续熔断</div>
+<div class="sig sig-g"><b>7/30-31 暴力回补</b><br>+$38亿/+$42亿<br>主动基金重返</div>
 <div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
-4个月累计: <span style="color:#3fb950">+$180亿</span><br>
-7月逆势: <span style="color:#58a6ff">+$90亿</span><br>
-当前:主动基金回补初期
+流入: <span style="color:#3fb950">15周 $246亿</span><br>
+流出: <span style="color:#f85149">8周 −$66亿</span><br>
+净: <span style="color:#58a6ff">+$180亿</span>
 </div>
 </div>
 </div>
@@ -27,19 +29,23 @@
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['5/1','5/8','5/15','5/22','5/29','6/5','6/12','6/19','6/22','6/26','7/1','7/3','7/8','7/10','7/14','7/17','7/21','7/23','7/25','7/28','7/29','7/30','7/31'];
-var weekly=[15,18,22,20,25,28,20,15,5,-5,-8,-10,54,15,10,5,8,12,-28,-15,-20,38,42];
-var cumul=[15,33,55,75,100,128,148,163,168,163,155,145,199,214,224,229,237,249,221,206,186,224,266];
-new Chart(ctx,{type:'line',
+var weekly=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
+var cumul=[15,33,55,75,100,128,148,163,158,148,140,128,182,197,207,212,220,232,204,189,169,207,249];
+var inflow=weekly.map(function(v){{return v>0?v:0}});
+var outflow=weekly.map(function(v){{return v<0?v:0}});
+
+new Chart(ctx,{type:'bar',
   data:{labels:labels,datasets:[
-    {label:'周度净流入(亿$)',data:weekly,borderColor:'#58a6ff',backgroundColor:function(ctx){var c=ctx.chart.ctx;var g=c.createLinearGradient(0,0,0,280);g.addColorStop(0,'rgba(88,166,255,0.15)');g.addColorStop(1,'rgba(88,166,255,0.0)');return g;},fill:true,tension:0.3,pointRadius:2,borderWidth:2.5,type:'bar',yAxisID:'y'},
-    {label:'累计流入(亿$)',data:cumul,borderColor:'#3fb950',tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y1'}
+    {label:'流入(亿$)',data:inflow,backgroundColor:'rgba(63,185,80,0.7)',borderColor:'#3fb950',borderWidth:1,borderRadius:2,stack:'flow',order:2},
+    {label:'流出(亿$)',data:outflow,backgroundColor:'rgba(248,81,73,0.7)',borderColor:'#f85149',borderWidth:1,borderRadius:2,stack:'flow',order:2},
+    {label:'累计净流(亿$)',data:cumul,borderColor:'#d2991d',tension:0.4,pointRadius:2,borderWidth:2.5,type:'line',yAxisID:'y1',order:1}
   ]},
   options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
     plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},
     scales:{
-      x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false}},
-      y:{position:'left',ticks:{color:'#8b949e',font:{size:8},callback:function(v){{return(v>=0?'+':'')+'$'+v+'亿'}}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'周度流入',color:'#8b949e',font:{size:8}}},
-      y1:{position:'right',ticks:{color:'#3fb950',font:{size:8},callback:function(v){{return'$'+v+'亿'}}},grid:{display:false},title:{display:true,text:'累计流入',color:'#3fb950',font:{size:8}}}
+      x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false},stacked:true},
+      y:{stacked:true,position:'left',ticks:{color:'#8b949e',font:{size:8},callback:function(v){{return(v>=0?'+':'')+'$'+v+'亿'}}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'周度流量',color:'#8b949e',font:{size:8}}},
+      y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){{return'$'+v+'亿'}}},grid:{display:false},title:{display:true,text:'累计',color:'#d2991d',font:{size:8}}}
     }
   }});
 },300);
