@@ -1,170 +1,170 @@
 [
   {
-    "date": "7/1",
-    "sk_foreign": -3600,
-    "sk_inst": -800,
-    "sk_retail": 4400,
-    "kospi": 13353,
-    "event": "H1末出逃"
-  },
-  {
-    "date": "7/2",
-    "sk_foreign": -2800,
-    "sk_inst": -500,
-    "sk_retail": 3300,
-    "kospi": 12626,
-    "event": "月初暴跌"
+    "date": "1",
+    "close": 2,
+    "foreign_net": 0,
+    "inst_net": 0,
+    "foreign_pct": 9.0,
+    "event": ""
   },
   {
     "date": "7/3",
-    "sk_foreign": -1500,
-    "sk_inst": -300,
-    "sk_retail": 1800,
-    "kospi": 12500,
-    "event": "休市前"
+    "close": 2425000,
+    "foreign_net": 25993,
+    "inst_net": -18075,
+    "foreign_pct": 50.17,
+    "event": ""
+  },
+  {
+    "date": "7/6",
+    "close": 2343000,
+    "foreign_net": -13693,
+    "inst_net": -649,
+    "foreign_pct": 50.17,
+    "event": ""
   },
   {
     "date": "7/7",
-    "sk_foreign": -2100,
-    "sk_inst": -400,
-    "sk_retail": 2500,
-    "kospi": 12301,
-    "event": "独立日后"
+    "close": 2201000,
+    "foreign_net": -524,
+    "inst_net": -11930,
+    "foreign_pct": 50.06,
+    "event": ""
   },
   {
     "date": "7/8",
-    "sk_foreign": 344,
-    "sk_inst": 200,
-    "sk_retail": -544,
-    "kospi": 12900,
-    "event": "全天唯一净买"
+    "close": 2076000,
+    "foreign_net": -5924,
+    "inst_net": 1833,
+    "foreign_pct": 50.05,
+    "event": ""
   },
   {
     "date": "7/9",
-    "sk_foreign": 134,
-    "sk_inst": 150,
-    "sk_retail": -284,
-    "kospi": 12907,
-    "event": "小幅净买"
+    "close": 2186000,
+    "foreign_net": 8839,
+    "inst_net": -4579,
+    "foreign_pct": 50.01,
+    "event": ""
   },
   {
     "date": "7/10",
-    "sk_foreign": -1800,
-    "sk_inst": -350,
-    "sk_retail": 2150,
-    "kospi": 12658,
-    "event": "ADR上市日"
+    "close": 2180000,
+    "foreign_net": 4451,
+    "inst_net": -16761,
+    "foreign_pct": 49.87,
+    "event": ""
   },
   {
     "date": "7/13",
-    "sk_foreign": -309,
-    "sk_inst": -200,
-    "sk_retail": 509,
-    "kospi": 12207,
-    "event": "熔断日"
+    "close": 1845000,
+    "foreign_net": -14423,
+    "inst_net": -13001,
+    "foreign_pct": 49.77,
+    "event": ""
   },
   {
     "date": "7/14",
-    "sk_foreign": 957,
-    "sk_inst": 300,
-    "sk_retail": -1257,
-    "kospi": 13171,
-    "event": "反弹"
+    "close": 1913000,
+    "foreign_net": 13346,
+    "inst_net": 12713,
+    "foreign_pct": 49.88,
+    "event": ""
   },
   {
     "date": "7/15",
-    "sk_foreign": 2320,
-    "sk_inst": 500,
-    "sk_retail": -2820,
-    "kospi": 13372,
-    "event": "大反弹"
+    "close": 2082000,
+    "foreign_net": 5537,
+    "inst_net": 6894,
+    "foreign_pct": 52.44,
+    "event": ""
   },
   {
     "date": "7/16",
-    "sk_foreign": -895,
-    "sk_inst": -250,
-    "sk_retail": 1145,
-    "kospi": 13294,
-    "event": "反弹回落"
+    "close": 1842000,
+    "foreign_net": -11582,
+    "inst_net": -8651,
+    "foreign_pct": 52.37,
+    "event": ""
   },
   {
     "date": "7/20",
-    "sk_foreign": 1200,
-    "sk_inst": 400,
-    "sk_retail": -1600,
-    "kospi": 13478,
-    "event": "四连买D1"
+    "close": 1764000,
+    "foreign_net": -9297,
+    "inst_net": 5849,
+    "foreign_pct": 52.4,
+    "event": ""
   },
   {
     "date": "7/21",
-    "sk_foreign": 800,
-    "sk_inst": 300,
-    "sk_retail": -1100,
-    "kospi": 13500,
-    "event": "四连买D2"
+    "close": 1836000,
+    "foreign_net": 6723,
+    "inst_net": -4359,
+    "foreign_pct": 52.39,
+    "event": ""
   },
   {
     "date": "7/22",
-    "sk_foreign": 956,
-    "sk_inst": 350,
-    "sk_retail": -1306,
-    "kospi": 14342,
-    "event": "四连买D3"
+    "close": 1830000,
+    "foreign_net": -10339,
+    "inst_net": 11720,
+    "foreign_pct": 52.5,
+    "event": ""
   },
   {
     "date": "7/23",
-    "sk_foreign": 500,
-    "sk_inst": 200,
-    "sk_retail": -700,
-    "kospi": 14635,
-    "event": "四连买D4"
+    "close": 1919000,
+    "foreign_net": -2843,
+    "inst_net": 13235,
+    "foreign_pct": 52.6,
+    "event": ""
   },
   {
     "date": "7/24",
-    "sk_foreign": -17600,
-    "sk_inst": -867,
-    "sk_retail": 18467,
-    "kospi": 13482,
-    "event": "一天清仓!"
+    "close": 1759000,
+    "foreign_net": -8511,
+    "inst_net": -17182,
+    "foreign_pct": 52.44,
+    "event": ""
   },
   {
     "date": "7/27",
-    "sk_foreign": -11052,
-    "sk_inst": -828,
-    "sk_retail": 11880,
-    "kospi": 13204,
-    "event": "CXMT上市"
+    "close": 1816000,
+    "foreign_net": 4197,
+    "inst_net": -11185,
+    "foreign_pct": 52.39,
+    "event": ""
   },
   {
     "date": "7/28",
-    "sk_foreign": -32092,
-    "sk_inst": -1500,
-    "sk_retail": 33592,
-    "kospi": 10447,
-    "event": "熔断!最强卖"
+    "close": 1550000,
+    "foreign_net": 6024,
+    "inst_net": -28308,
+    "foreign_pct": 52.11,
+    "event": ""
   },
   {
     "date": "7/29",
-    "sk_foreign": -12173,
-    "sk_inst": 31488,
-    "sk_retail": -19767,
-    "kospi": 10447,
-    "event": "机构托盘"
+    "close": 1401000,
+    "foreign_net": 11087,
+    "inst_net": -12915,
+    "foreign_pct": 50.77,
+    "event": ""
   },
   {
     "date": "7/30",
-    "sk_foreign": 5876,
-    "sk_inst": 744,
-    "sk_retail": -6620,
-    "kospi": 11303,
-    "event": "外资转买!"
+    "close": 1322000,
+    "foreign_net": -1060,
+    "inst_net": 5876,
+    "foreign_pct": 50.86,
+    "event": ""
   },
   {
     "date": "7/31",
-    "sk_foreign": 4715,
-    "sk_inst": 11396,
-    "sk_retail": -82739,
-    "kospi": 14600,
-    "event": "涨停!史涨"
+    "close": 1718000,
+    "foreign_net": 4762,
+    "inst_net": 37895,
+    "foreign_pct": 51.16,
+    "event": ""
   }
 ]

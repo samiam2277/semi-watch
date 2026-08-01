@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-01T23:21:40.696861",
-  "total": 123,
-  "bullish": 24,
+  "generated_at": "2026-08-01T23:46:49.701744",
+  "total": 122,
+  "bullish": 22,
   "bearish": 26,
-  "neutral": 73,
-  "bias": -0.02,
+  "neutral": 74,
+  "bias": -0.03,
   "articles": [
     {
       "title": "Fundamental Evidence Against Semiconductor Crash! UMC (UMC.US) Reports Explosive Earnings and Raises Capital Expenditures; AI Orders Spill Over from GPUs to Mature Processes - Bitget",
@@ -42,7 +42,7 @@
       "sentiment": "bear"
     },
     {
-      "title": "KOSPI Triggers Historic Back-to-Back Circuit Breakers as AI Memory Rally Faces Structural Reckoning - techtimes.com",
+      "title": "KOSPI Triggers Historic Back-to-Back Circuit Breakers as AI Memory Rally Faces Structural Reckoning - Tech Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYmNNcDYxSWlhXzhmZlFtRXFpOFlUdVcxclJkUTZUb2NVVS1rUTFLSVFpbVdqcXZaSHByZzd3WGJFZTlzWmRTeDdrNzZHQmprZThXZldjSkNtWHE5VWJkM1o1MDFUbXY1YkZGUkdpSWs2czNrb1E1ZTNidUF2cjhjTEJ5bTZNVTZHNHFaNnRsNFVkamlfb2x4N2JyVzJZSjRDZzVGa0laVlhWcFRCQXF0YllZVUozOFNDSERNelRQSVNoR0psZXY4YW9kc2ZJN0w3Z0Y5MGRrVkFXUVZ3MWJPS2hB?oc=5",
       "time": "Wed, 29 Jul 2026 11:18:17",
@@ -147,6 +147,13 @@
       "sentiment": "bear"
     },
     {
+      "title": "Memory stocks are getting slammed. Why the year's hottest trade has suddenly fallen apart. - AOL.com",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTUtRS21qUTBGUnNlN1BzQzRBeVN5anpmdFNhRGVfOXFPUXpBYWJ3Z3pscFBzbE9yeXRsY0h2OWZNZjhqOGs1QWxscGNJaVJwN1E0NUZDT1VGTkFDV1l3NDZWc2xxSmRGbGVjMXZsTXZ0d3h4TjlpRTlUN2F5LUNycGFzYw?oc=5",
+      "time": "Wed, 08 Jul 2026 15:04:32",
+      "sentiment": "neutral"
+    },
+    {
       "title": "South Korea's Kospi enters bear market, plunges 20% from peak. What's spooking investors? - The Economic Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNNXhNTGVOeHZFU2NxVlhCeVNUcC1ITmhlM1FMclFCQnN1SUE3Y2Fybzc0c0RFSHhLTEg1a2lRLUx5QkdxUUV1TUw4cjRDTXU4UHN1U3hjZGNnM3pycm9uT09KYWQzNlhoSjZyeG4tUGZlNnRNLThnYmJyTWZWZk9VVEFkZEt5cjJHOVJHQnFrZ3NNdjNUY3VNQ3ZMVTBRNllXdi1EVW50Y0tkUEZMOWtwOVFybVZqRWk4Y1FTblpjbU95V25nUGV6Y25MQ2U0X1l3bUdCQVd5eWUwRWVtQU9hS0Q5NHZCVFY5UTdJMnZvc9IB9AFBVV95cUxOekdUZl9iY21nTGkzOHhCaWIyM3lIZ2tDcl9TbzZXREVkelAwc0xQWlN0ZHUzOW02QW5IX3IyYjlsNk9VRmVqbk9rYXk0czVaU29jQzJMamdSbVdVUlZXSE1EM0x5X3k2TGZiMnBIZzBEUlJxSS1JNUNURmRpRlZBWmxibzlEMUs0ZDNoQzRKckFqSjNHaVJPVmlSTjRmR3VrTGxYWU82WjZxZkFpRU96RG5LYmdmbUR1TzBuZEdyNTVuRFpVdjM0akY2VGZ2ZFN1OFRldHVNNE9EQWdzZl9OMDlya2swV2J2NmxMV1J2TzRWTFFB?oc=5",
@@ -231,7 +238,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "'中 반도체 상장' 악재 겹쳐…코스피, 8% 폭락 서킷브레이커 - jnilbo.com",
+      "title": "'中 반도체 상장' 악재 겹쳐…코스피, 8% 폭락 서킷브레이커 - 진일보",
       "source": "Google News KR",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1TUFNHMnFyV0NPanV0MWZkUllKbFEwVE5rYlR1UU02U2Rwc2JhRWt0VEgtbWh6ZVRMRXhBdWRDWTJISjFiVmE5N1d3QVl5WUdxX3pqdi1qN3FtUmhNWnA1aFBFOU9lSjR0SjRwVDIzVQ?oc=5",
       "time": "Tue, 28 Jul 2026 01:33:03",
@@ -294,6 +301,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "HBM再涨价，存储告急！ - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MaVg3SGZfRUtLaGo4UjZrR3FOdlNxMGNzQzUzZ3JLZm1HTlBxbm5reE1hb0RSQk1QNlJtdzcwODVBdXFVRG9VUTBhYk5mMzBFU3hV?oc=5",
+      "time": "Tue, 23 Dec 2025 08:00:00",
+      "sentiment": "neutral"
+    },
+    {
       "title": "SanDisk Rises 8%, Western Digital Jumps 9%, Micron Adds 7% as Memory Rebound Accelerates - AOL.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUGJ5YUhSYS1tTXMtSXNpbTgzSXRpdFZOOVZmenJuakVrVlA1T0tuZ3NjdVVCd3dQbkhkMEV0N0szVzd6ZVM2TS0yWDlMYlF3bXhxRGtaUVdSX1I4ZFBWTUlZTDlrUy1EQ0hud09yVnJxS2JBd2FrcDV0X1IyVWotcQ?oc=5",
@@ -340,20 +354,6 @@
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5sa3J6SW9rclhEX3hyck45TFpZTGdhV3IycVNQSmNleTNPWno2RUVuaks4OHBGN1ZmaFV3V2RXNUhiQzBIbU80bA?oc=5",
       "time": "Tue, 07 Jul 2026 07:00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "三星、海力士、美光暴跌，长鑫大涨！知名分析师：存储或有“大洗牌”，有一家大概率出局 - 华尔街见闻",
-      "source": "华尔街见闻",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QUGo2UzB4Z0IwNTJ2YkxiZ1FoMmJ4MWFuWmlWUjhfOFBPNWx3NjJOX3N1SXN1UUNORkpicWNCbU40ZFppRjRzVHBEc2RUT3Rvb013?oc=5",
-      "time": "Thu, 30 Jul 2026 20:17:02",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "微软Meta财报“修复”AI信仰，芯片指数盘中创4月来最大涨幅，数据中心产业链爆发 - 华尔街见闻",
-      "source": "华尔街见闻",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvcmFOaVBHSlgwZl8wY0YzQlRGVVZ3ZHpSUl8tR0EwY2M5RlVnS1FUMU9OSDhackw1c3hPR1FHTHBJQmxuNGVCQlhFVDByUTFyTnFv?oc=5",
-      "time": "Thu, 30 Jul 2026 20:00:07",
       "sentiment": "neutral"
     }
   ],
