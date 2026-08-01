@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.claude/
+__pycache__/
+*.pyc
+*.log
+package-lock.json
+impact_data.json
+index.html
+src/
+public/
+tsconfig*.json
+tsconfig*.tsbuildinfo
+vite.config.ts
+package.json

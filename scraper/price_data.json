@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-07-31T17:00:00",
+  "SOX": {"price": 11303, "change": 856, "changePct": 8.2},
+  "VIX": {"price": 20.6, "change": 2.4, "changePct": 13.3},
+  "KOSPI": {"price": 6595, "change": 1002, "changePct": 17.9},
+  "SK_Hynix": {"price": 171800, "change": 39600, "changePct": 30.0},
+  "SKHY": {"price": 172, "change": 35, "changePct": 25.5},
+  "MU": {"price": 875, "change": 136, "changePct": 18.4},
+  "MRVL": {"price": 188, "change": 25, "changePct": 15.3},
+  "NVDA": {"price": 196, "change": 6, "changePct": 3.2},
+  "SMH": {"price": 515, "change": 38, "changePct": 8.0},
+  "SOXX": {"price": 395, "change": 30, "changePct": 8.2}
+}
