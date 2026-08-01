@@ -107,7 +107,17 @@ except Exception as e:
     log(f'  ⚠️ KRX失败: {e}')
 
 # ═══════════════════════════════════════
-# 6. 重写仪表盘HTML
+# 6. 重写图表数据（扩展最新数据点）
+log('📊 6/7 重写图表...')
+try:
+    sys.path.insert(0, os.path.join(SCRAPER_DIR))
+    from chart_rebuilder import rebuild_all
+    rebuild_all()
+    log('  ✅ 9个图表已重写')
+except Exception as e:
+    log(f'  ⚠️ 图表重写失败: {e}')
+
+# 7. 重写仪表盘HTML
 # ═══════════════════════════════════════
 log('🔄 6/6 重写仪表盘...')
 try:
