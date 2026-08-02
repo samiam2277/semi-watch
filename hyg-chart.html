@@ -8,7 +8,7 @@
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -24,14 +24,7 @@
 </div>
 </div>
 <script>
-function initChart(){
-  var err=document.getElementById('err');
-  try{
-    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
-    var c=document.getElementById('c');
-    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
-    var ctx=c.getContext('2d');
-    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="chart.umd.min.js"></script>
@@ -43,7 +36,7 @@ var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u670
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -59,14 +52,7 @@ var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u670
 </div>
 </div>
 <script>
-function initChart(){
-  var err=document.getElementById('err');
-  try{
-    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
-    var c=document.getElementById('c');
-    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
-    var ctx=c.getContext('2d');
-    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="chart.umd.min.js"></script>
@@ -78,7 +64,7 @@ var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u670
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -94,18 +80,11 @@ var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u670
 </div>
 </div>
 <script>
-function initChart(){
-  var err=document.getElementById('err');
-  try{
-    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
-    var c=document.getElementById('c');
-    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
-    var ctx=c.getContext('2d');
-    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
 var soxS=sox.map(function(v){{return v/190}});
-try{new Chart(ctx,{type:'line',
+new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
     {label:'HYG高收益债($)',data:hyg,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
     {label:'SOX÷190(对标)',data:soxS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y'}
@@ -117,6 +96,6 @@ try{new Chart(ctx,{type:'line',
       y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'HYG $',color:'#8b949e',font:{size:8}}}
     }
   }});
-  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
+},300);
 </script>
 </body></html>

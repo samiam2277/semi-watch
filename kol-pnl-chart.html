@@ -7,7 +7,7 @@
 .sig-r{background:rgba(248,81,73,0.12);border-left:3px solid #f85149}
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -25,18 +25,11 @@ Burry空头:<span style="color:#3fb950">+35%</span>
 </div>
 </div>
 <script>
-function initChart(){
-  var err=document.getElementById('err');
-  try{
-    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
-    var c=document.getElementById('c');
-    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
-    var ctx=c.getContext('2d');
-    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708\u521d", "6/15", "6/22", "6/28", "7/5", "7/12", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
 
-try{new Chart(ctx,{type:'line',
+new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
     {label:'Situational Awareness',data:sa,borderColor:'#f85149',tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'},
     {label:'存储多头(平均)',data:long,borderColor:'#3fb950',tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'},
@@ -50,6 +43,6 @@ try{new Chart(ctx,{type:'line',
       y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){{return(v>=0?'+':'')+v+'%'}}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'累计盈亏%',color:'#8b949e',font:{size:8}}}
     }
   }});
-  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
+},300);
 </script>
 </body></html>

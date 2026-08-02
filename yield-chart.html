@@ -8,7 +8,7 @@
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
+</style></head><body>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -24,20 +24,13 @@
 </div>
 </div>
 <script>
-function initChart(){
-  var err=document.getElementById('err');
-  try{
-    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
-    var c=document.getElementById('c');
-    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
-    var ctx=c.getContext('2d');
-    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['24/7','24/9','24/11','25/1','25/3','25/5','25/7','25/9','25/11','26/1','26/2','26/3','26/4','26/5','26/6','26/7','8/1'];
 var spread=[-35,-42,-28,-20,-38,-55,-60,-48,-32,-60,-35,-15,-8,-22,-45,-38,-28];
 var sox=[5500,5400,5800,7575,7080,10300,14342,11800,11600,7000,7000,7500,9556,11600,14655,10447,11800];
 var soxS=sox.map(function(v){return v/160});
-try{try{new Chart(ctx,{type:'line',
+new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
     {label:'2Y/10Y利差(bp)',data:spread,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.1)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y',
      segment:{borderColor:function(ctx){return ctx.p0.parsed.y<0&&ctx.p1.parsed.y<0?'#f85149':'#3fb950'}}},
@@ -52,6 +45,6 @@ try{try{new Chart(ctx,{type:'line',
     }
   }
 });
-  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
+},300);
 </script>
 </body></html>
