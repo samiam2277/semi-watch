@@ -24,7 +24,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -52,7 +52,7 @@ var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u670
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -80,7 +80,7 @@ var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u670
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7/8", "7/14", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
 var soxS=sox.map(function(v){{return v/190}});
@@ -96,6 +96,6 @@ new Chart(ctx,{type:'line',
       y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'HYG $',color:'#8b949e',font:{size:8}}}
     }
   }});
-},300);
+}initChart();
 </script>
 </body></html>

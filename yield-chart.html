@@ -24,7 +24,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['24/7','24/9','24/11','25/1','25/3','25/5','25/7','25/9','25/11','26/1','26/2','26/3','26/4','26/5','26/6','26/7','8/1'];
 var spread=[-35,-42,-28,-20,-38,-55,-60,-48,-32,-60,-35,-15,-8,-22,-45,-38,-28];
@@ -45,6 +45,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-},300);
+}initChart();
 </script>
 </body></html>

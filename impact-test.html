@@ -51,7 +51,7 @@ SOX+8% 海力士+30% 涨停<br>
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["7/8", "7/9", "7/10", "7/13", "7/14", "7/15", "7/16", "7/17", "7/20", "7/21", "7/22", "7/23", "7/24", "7/27", "7/28", "7/29", "7/30", "7/31"]
 var max=Math.max.apply(null,sox.map(Math.abs).concat(sk.map(Math.abs)));
@@ -84,6 +84,6 @@ new Chart(ctx,{
     }
   }
 });
-},300);
+}initChart();
 </script>
 </body></html>

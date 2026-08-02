@@ -23,7 +23,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['5/1','5/15','6/1','6/10','6/15','6/20','6/22','6/25','6/28','7/1','7/5','7/10','7/13','7/17','7/20','7/22','7/24','7/27','7/28','7/29','7/30','7/31'];
 var profit=[45,55,65,72,78,82,85,80,72,60,48,35,28,22,18,15,10,12,15,18,22,25];
@@ -44,6 +44,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-},300);
+}initChart();
 </script>
 </body></html>

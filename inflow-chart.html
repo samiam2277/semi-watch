@@ -23,7 +23,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['5/1','5/8','5/15','5/22','5/29','6/5','6/12','6/19','6/22','6/26','7/1','7/3','7/8','7/10','7/14','7/17','7/21','7/23','7/25','7/28','7/29','7/30','7/31'];
 var etfIn=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
@@ -46,6 +46,6 @@ new Chart(ctx,{type:'bar',
     }
   }
 });
-},300);
+}initChart();
 </script>
 </body></html>

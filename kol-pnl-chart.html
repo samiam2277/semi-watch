@@ -25,7 +25,7 @@ Burry空头:<span style="color:#3fb950">+35%</span>
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708\u521d", "6/15", "6/22", "6/28", "7/5", "7/12", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
 
@@ -43,6 +43,6 @@ new Chart(ctx,{type:'line',
       y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){{return(v>=0?'+':'')+v+'%'}}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'累计盈亏%',color:'#8b949e',font:{size:8}}}
     }
   }});
-},300);
+}initChart();
 </script>
 </body></html>

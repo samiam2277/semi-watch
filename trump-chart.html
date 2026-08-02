@@ -26,7 +26,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['24/7','24/9','24/11','24/12','25/1','25/2','25/3','25/4','25/5','25/6','25/7','25/8','25/9','25/10','25/11','25/12','26/1','26/2','26/3','26/4','26/5','26/6','26/7','26/7下','8/1'];
 var influence=[30,45,95,80,65,55,70,88,72,60,50,40,35,55,75,60,85,50,45,40,35,30,42,25,20];
@@ -45,6 +45,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-},300);
+}initChart();
 </script>
 </body></html>

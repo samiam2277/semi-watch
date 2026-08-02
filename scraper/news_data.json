@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-02T23:30:08.750902",
-  "total": 117,
-  "bullish": 23,
+  "generated_at": "2026-08-03T00:00:22.172692",
+  "total": 120,
+  "bullish": 25,
   "bearish": 24,
-  "neutral": 70,
-  "bias": -0.01,
+  "neutral": 71,
+  "bias": 0.01,
   "articles": [
     {
       "title": "SK Hynix's Profits Explode 550%, but Its $31 Billion Spending Plan Sends Investors Running - 24/7 Wall St.",
@@ -84,7 +84,7 @@
       "sentiment": "bull"
     },
     {
-      "title": "South Korea stocks plunge 11%, trading halted again as SK Hynix earnings deepen AI chip rout - firstpost.com",
+      "title": "South Korea stocks plunge 11%, trading halted again as SK Hynix earnings deepen AI chip rout - Firstpost",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTmdQSmRCMkNlUS1ZeElpamd0V1hXYVFYQ3NuMTV2bTBJX01QNkFpcmJUb2tzN0FROEFQWXJTQlRHaV8wSjhsWUNtTGRmYUFud2RxcjZRRml2Uy1mUHllZHI3Ymx3d1BVUkdGU0F6SWNtLS12Sng1dnZjRFJyYWgxaHNnVzFMMGJpZjMyWDRwQjlSTnpDMTJGRlJEWEh4ZWtnejRxbk91ZlFteEhJMFo3b2cyYjlYbk16NDRrZXVybTdUUdIBxwFBVV95cUxNRGJwOGNfbHVjS3E4WVk2M085MFhhbzFJMkdoNmNJS0dxWUlmb1Z5QnFGQjRUM0JUVVJwaFNDanVudVJEd1JKYlpZUzdFVkRzcDM1amdJakVXaldseldWMU4wWU5yX1A4aWE0Wmt4akZuUEtUVUh4aGhMNDhlQXNCWjB0Q3dkTlRRSXg3Tlo5dkZvZ2xOckgxUEJxY2NEMEc1VTdvVmdtbGlIOUI0a2xhaTNLN3RDN3NxYXBDcDRyUTlMX0xvdmVV?oc=5",
       "time": "Wed, 29 Jul 2026 04:45:57",
@@ -103,6 +103,13 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd2QxVnV4UVViWE9mSFpaV1J1YXlaci1zaUlXM2NDMHMyUVpISzRFeW5EQUZrdnFjUlBoTGUxYlc3OUx3V2ZRQ3F1M3pTNF9ud0tRVnB6N2VjS0RiYlEtejNUSkpabVZCWXZiR2NrRFBIU3lQNUUyOEdDN0dXNzZ5WUU2aFVkQzlUeDRrZFB3akFIQzFxX1VObFRmd1FacGdi?oc=5",
       "time": "Wed, 29 Jul 2026 04:38:50",
       "sentiment": "neutral"
+    },
+    {
+      "title": "Micron rises after rival SK Hynix posts record sales and profits - Sherwood News",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOX3M2NHcwS3NtSlEybHlzOG5LVDBIbGFwZGpCd2xPQlFFWF9saDZUWExTMUpINW9mNmhrcnFmcVhsZ3N5UUxJS2pXVTltcTdmVEx5ckdVRGVlZmNyNF9GRFFKM01jYmd2TjROOGw4dTJTUVo2aVFkWjd1MUNSaWRNWWJhb1F3dGRWdmtQdEh0WmRTaGJDaVhodEltQ3U?oc=5",
+      "time": "Wed, 28 Jan 2026 08:00:00",
+      "sentiment": "bull"
     },
     {
       "title": "财联社6月24日电，三星电子股价上涨近10%，此前报道称三星可能宣布90万亿韩元的股份回购。 - 财联社",
@@ -187,6 +194,13 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBaV19fQlVJNGZPOGlhUkNvVk5WTElwdFhKVnJYS09fcEZ4M0hyUXhEVVRWQnJ0ZkNQY2lWV2toaXk5eS1zWklMX2lkMGg5SWRQM2pyYW5DWGlId2hic2Z0Yks5dVhBeWhzdzZpWXJDUWdzNGNPS1E?oc=5",
       "time": "Tue, 28 Jul 2026 16:00:00",
       "sentiment": "bull"
+    },
+    {
+      "title": "22:16:53【美股AI硬件板块跌幅继续扩大 美光、AMD、闪迪等多股跌超10%】 - 财联社",
+      "source": "财联社",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BdGZKWEd2N0lVNGo0R1JnbHpFbUxTbVVhVWRfcGlBVGsxZnliZmNwVVdOMmFKUGNIb2hUc0drd2RvLWxVN0ZEaQ?oc=5",
+      "time": "Tue, 28 Jul 2026 14:16:53",
+      "sentiment": "neutral"
     },
     {
       "title": "AI泡沫的金丝雀，刚刚死去..... - 华尔街见闻",
@@ -340,20 +354,6 @@
       "source": "Google News KR",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93d29sLVFLaUhTTktGVUx1ckpUbUtRRGlIdkNXaXQtaG1xTXJVQ2k2ZnVNNkZTci0zQkI3YlV4ekRRVEhZcVVCaVlSeGZmWlZvdkhzZFBZQUhOMGozc2VjNUJDQ0Zfanc?oc=5",
       "time": "Tue, 09 Jun 2026 07:00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Micron, Samsung, SK Hynix just dragged memory stocks into a bear market - AOL.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UM18tOV9QX3VZNzNtTk9rMjloVUoyU2g0aDJZQ0RtQmdvUnJ5d05RYi1fZ2s3Ym9WQ1FOblVITHVEQzA3Nm1meG1vV2JFRWx6M0FfWGFsLUp2VHVIakpjQUpKRUUxcXhQLXkwTlh4aGd4TS1RZEJOQUlFZUk?oc=5",
-      "time": "Tue, 07 Jul 2026 16:16:24",
-      "sentiment": "bear"
-    },
-    {
-      "title": "06:40:22【三星电子预计第二季度营业利润同比暴增1810%】 - 财联社",
-      "source": "财联社",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5sa3J6SW9rclhEX3hyck45TFpZTGdhV3IycVNQSmNleTNPWno2RUVuaks4OHBGN1ZmaFV3V2RXNUhiQzBIbU80bA?oc=5",
-      "time": "Tue, 07 Jul 2026 07:00:00",
       "sentiment": "neutral"
     }
   ],

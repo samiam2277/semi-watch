@@ -26,7 +26,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708\u4e0a", "3\u6708\u4e0b", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u4e0a", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u4e0a", "7/8-14", "7/15-21", "7/22-24", "7/25-28", "7/29", "7/30-31"]
 
@@ -46,6 +46,6 @@ new Chart(ctx,{type:'bar',
       y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){{return(v>=0?'+':'')+'$'+v+'亿'}}},grid:{display:false},title:{display:true,text:'累计/代理($亿)',color:'#d2991d',font:{size:8}}}
     }
   }});
-},300);
+}initChart();
 </script>
 </body></html>

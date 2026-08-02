@@ -23,7 +23,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e0b", "4\u6708", "4\u6708\u4e0b", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7\u6708\u4e2d", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -50,7 +50,7 @@ var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e0b", "4\u6708", "4\u6708\u4e0b", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7\u6708\u4e2d", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -77,7 +77,7 @@ var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e0b", "4\u6708", "4\u6708\u4e0b", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7\u6708\u4e2d", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -104,7 +104,7 @@ var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e
 </div>
 </div>
 <script>
-setTimeout(function(){
+function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708\u521d", "2\u6708\u4e2d", "3\u6708", "3\u6708\u4e0b", "4\u6708", "4\u6708\u4e0b", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u521d", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u521d", "7\u6708\u4e2d", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
 new Chart(ctx,{type:'line',
@@ -119,6 +119,6 @@ new Chart(ctx,{type:'line',
         title:{display:true,text:'P/C比率',color:'#8b949e',font:{size:8}}}
     }
   }});
-},300);
+}initChart();
 </script>
 </body></html>
