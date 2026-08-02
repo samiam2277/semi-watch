@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-03T00:30:35.107758",
+  "generated_at": "2026-08-03T01:00:48.181030",
   "total": 120,
   "bullish": 25,
-  "bearish": 24,
-  "neutral": 71,
-  "bias": 0.01,
+  "bearish": 23,
+  "neutral": 72,
+  "bias": 0.02,
   "articles": [
     {
       "title": "SK Hynix's Profits Explode 550%, but Its $31 Billion Spending Plan Sends Investors Running - 24/7 Wall St.",
@@ -14,7 +14,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "千亿ETF神话破灭：SK海力士暴跌，香港“两倍做多”改\"灵活杠杆\"，韩国限制杠杆ETF投资 - 华尔街见闻",
+      "title": "千亿ETF神话破灭：SK海力士暴跌，香港“两倍做多”改\"灵活杠杆\"，韩国限制杠杆ETF投资 - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KVmx3ZkgzQUFrZURXZFluWWNQS2lKWVhmbXQzYzlWa2pjUURFNi0ySkk0QXBuSUFYRVFrenJHNDhNZlBsS2o0bXl0b0tDOFo5cG1n?oc=5",
       "time": "Wed, 29 Jul 2026 18:41:08",
@@ -42,7 +42,7 @@
       "sentiment": "bull"
     },
     {
-      "title": "下半年，垂直Agent先下牌桌？ - 华尔街见闻",
+      "title": "下半年，垂直Agent先下牌桌？ - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ySVdYWWJXZHlnUk9acDBtc3BMRzR4YXFvNHpXVVBtalczeDAwMURHTDhQTHd3cmpSZU9uWnRSRk4xekpnY3RqNjFCa3AtZmx6VzBV?oc=5",
       "time": "Wed, 29 Jul 2026 11:08:57",
@@ -63,7 +63,7 @@
       "sentiment": "bull"
     },
     {
-      "title": "创业板探底回升涨超1%，大消费集体爆发，长鑫大涨12%市值超3.5万亿，恒科指一度涨超3%，小米大涨9% - 华尔街见闻",
+      "title": "创业板探底回升涨超1%，大消费集体爆发，长鑫大涨12%市值超3.5万亿，恒科指一度涨超3%，小米大涨9% - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzcjJ1bV9TOTlvTzRPWUlpd2tvZTFqaFR5Rk9DdEFEaUJNZWpvaUVuQUpKMFc1dUhDZ0kwMGRQUUNRRGsxa085MmVsbnR1c2RTd2ZR?oc=5",
       "time": "Wed, 29 Jul 2026 08:42:10",
@@ -91,7 +91,7 @@
       "sentiment": "bear"
     },
     {
-      "title": "\"史上最强\"之后，海力士开始难超预期了 - 华尔街见闻",
+      "title": "\"史上最强\"之后，海力士开始难超预期了 - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1QZHE4Z0QxVjllNGV6dG9GVkE2VzY5YWdhSlNmQUJoaDlOTzJob0hGUXRMbW9rR1RDMmlnOXlhR1dHSFNkbFEyNFI1cDlvdWQwWFEw?oc=5",
       "time": "Wed, 29 Jul 2026 04:38:50",
@@ -112,7 +112,7 @@
       "sentiment": "bull"
     },
     {
-      "title": "财联社6月24日电，三星电子股价上涨近10%，此前报道称三星可能宣布90万亿韩元的股份回购。 - 财联社",
+      "title": "财联社6月24日电，三星电子股价上涨近10%，此前报道称三星可能宣布90万亿韩元的股份回购。 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9yLXMxUnB3ZTI4RlI4bzZVSWNJM1VxQ0dEYUxXMnloWS1RZmlQamk2V3JXd2k1SnFTd05LbDNhejNIbDhBOWxDZQ?oc=5",
       "time": "Wed, 24 Jun 2026 07:00:00",
@@ -126,7 +126,7 @@
       "sentiment": "bull"
     },
     {
-      "title": "存储芯片“贫富差距”拉大，赢家输家到底怎么选？ - 华尔街见闻",
+      "title": "存储芯片“贫富差距”拉大，赢家输家到底怎么选？ - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5Vc0ZralQ0azJEVjczenVJOXNuQUhQM09FeXpfU1JNSlNQSlJJR2V3TFFYdjZGUEZVOFJTbGplMm93Q0I2MzhYR3dIYUZhOFgxOERZ?oc=5",
       "time": "Wed, 21 Jan 2026 08:00:00",
@@ -168,14 +168,14 @@
       "sentiment": "bear"
     },
     {
-      "title": "SK海力士Q2利润暴增六倍仍“未达标”，与10家客户敲定长协，HBM4下半年将加速放量｜财报见闻 - 华尔街见闻",
+      "title": "SK海力士Q2利润暴增六倍仍“未达标”，与10家客户敲定长协，HBM4下半年将加速放量｜财报见闻 - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4zd0pGU2RvclVQeTFZRE9SLWk3SGwxNHdJYnRaWXVodXMwN1JXNVFOZzRJTVlKXzZZTEdBczNZQmhvb3JBdE1ZVXNFajBtR19EUDhB?oc=5",
       "time": "Tue, 28 Jul 2026 23:47:37",
       "sentiment": "neutral"
     },
     {
-      "title": "06:44:59【SK海力士二季度营业利润增长近6倍 不及市场预期】 - 财联社",
+      "title": "06:44:59【SK海力士二季度营业利润增长近6倍 不及市场预期】 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1QRllHR1AxaWtMSU40bkJXZi02TzNMQ2NyTWlNcmF3YmtVbk9kaDVFdkdSYk1TdjUzMFlJbEc5TS02aDdmMG13Wg?oc=5",
       "time": "Tue, 28 Jul 2026 22:44:59",
@@ -196,14 +196,14 @@
       "sentiment": "bull"
     },
     {
-      "title": "22:16:53【美股AI硬件板块跌幅继续扩大 美光、AMD、闪迪等多股跌超10%】 - 财联社",
+      "title": "22:16:53【美股AI硬件板块跌幅继续扩大 美光、AMD、闪迪等多股跌超10%】 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BdGZKWEd2N0lVNGo0R1JnbHpFbUxTbVVhVWRfcGlBVGsxZnliZmNwVVdOMmFKUGNIb2hUc0drd2RvLWxVN0ZEaQ?oc=5",
       "time": "Tue, 28 Jul 2026 14:16:53",
       "sentiment": "neutral"
     },
     {
-      "title": "AI泡沫的金丝雀，刚刚死去..... - 华尔街见闻",
+      "title": "AI泡沫的金丝雀，刚刚死去..... - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBoVWgtRGxEb3pUYU4weVY2NUxFUXcyaVN6Mnk4ODg0THFVYWhPRU4tZm1WaFhQMV9uRlJhVGNUT1NjU2RrblBTTXhJbVNtTk1tSTY0?oc=5",
       "time": "Tue, 28 Jul 2026 11:01:02",
@@ -224,14 +224,14 @@
       "sentiment": "neutral"
     },
     {
-      "title": "黑色星期二！全球芯片股遭血洗，SK海力士重挫13%，AI回报成市场最大担心 - 华尔街见闻",
+      "title": "黑色星期二！全球芯片股遭血洗，SK海力士重挫13%，AI回报成市场最大担心 - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1WUnVCMTR5eDRFQjZLN2dSeGlRN243blhZaHphVXlTWFEtSzI1V3BxWTg4RzBPUEZSaWs0WmhiV2ZteVNCNGFhVzE1YVJIc2pJSzdv?oc=5",
       "time": "Tue, 28 Jul 2026 06:44:09",
       "sentiment": "neutral"
     },
     {
-      "title": "与纳斯达克深度绑定！韩国股市蜕变为\"半导体指数\"，引发投资者忧虑 - 华尔街见闻",
+      "title": "与纳斯达克深度绑定！韩国股市蜕变为\"半导体指数\"，引发投资者忧虑 - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1GWUg4WTE0dXJ0NkdVQWU5T2NtRDdQcEk3Qks1RXNrd2dvQXhOVHY0N2JzN3A5WlNSWjZOazJuMDJLd0pJLURHYXphdUtabGxJX2NB?oc=5",
       "time": "Tue, 28 Jul 2026 03:33:08",
@@ -245,14 +245,14 @@
       "sentiment": "bear"
     },
     {
-      "title": "日韩股市跳水，韩股又熔断！“存储双雄”暴跌 半导体抛售潮蔓延 - 财联社",
+      "title": "日韩股市跳水，韩股又熔断！“存储双雄”暴跌 半导体抛售潮蔓延 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBKMU5sR3dzOHV4ZnR1RUlHNzFrcW51RHc3TnJZSGVCdGFkUTZLeEZ6Q3dSbF94TEp2d0RQSklhb0hGR202SWhpXw?oc=5",
       "time": "Tue, 28 Jul 2026 01:31:36",
       "sentiment": "bear"
     },
     {
-      "title": "AI硬件周期转折点：从\"烧钱扩张\"到\"算账扩产\" - 华尔街见闻",
+      "title": "AI硬件周期转折点：从\"烧钱扩张\"到\"算账扩产\" - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UcXphUzU0dzBiM18zejlPWEZNV0hKRmx0OUV1U1RsdFZqOG13RnpSWUFwck9SX3hlaG41S29JXzJPQzBGVmJELU85OGtfWmtDNWJn?oc=5",
       "time": "Tue, 28 Jul 2026 01:02:43",
@@ -294,7 +294,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "HBM再涨价，存储告急！ - 华尔街见闻",
+      "title": "HBM再涨价，存储告急！ - wallstreetcn.com",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1MaVg3SGZfRUtLaGo4UjZrR3FOdlNxMGNzQzUzZ3JLZm1HTlBxbm5reE1hb0RSQk1QNlJtdzcwODVBdXFVRG9VUTBhYk5mMzBFU3hV?oc=5",
       "time": "Tue, 23 Dec 2025 08:00:00",

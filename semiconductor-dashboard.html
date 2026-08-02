@@ -181,7 +181,8 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
 <div class="card-weekly">
 <h3>⚖️ 韩国杠杆率走势（4月→7月）</h3>
-<iframe style="border:2px solid red!important;min-height:200px!important;background:#111!important" src="korea-lev-chart.html" style="width:100%;height:260px;border:none;border-radius:4px"></iframe>
+<canvas id="inlineTest" style="width:100%;height:260px"></canvas>
+<div id="inlineStatus" style="font-size:10px;color:#8b949e"></div>
 <div style="font-size:10px;color:var(--text2);margin-top:4px;text-align:center">
 <span style="color:#f85149">🔴信用贷款</span> <span style="color:#d2991d">🟡杠杆ETF</span> <span style="color:#58a6ff">🔵KOSPI(÷40)</span>
 </div>
@@ -368,8 +369,36 @@ async function refreshNews(){
   }
 }
 </script>
+<script>
+// Inline chart test - if this works, iframes are the problem
+(function(){
+  var st=document.getElementById('inlineStatus');
+  st.textContent='⏳ inline chart...';
+  if(typeof Chart==='undefined'){st.textContent='❌ Chart not loaded in parent';return;}
+  st.textContent='✅ Chart loaded, rendering...';
+  var c=document.getElementById('inlineTest');
+  var ctx=c.getContext('2d');
+  new Chart(ctx,{type:'line',data:{labels:['A','B','C','D','E'],datasets:[{label:'Test',data:[1,3,2,4,3],borderColor:'#3fb950'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#8b949e'}}},scales:{x:{ticks:{color:'#8b949e'}},y:{ticks:{color:'#8b949e'}}}}});
+  st.textContent='✅ Inline chart rendered!';
+})();
+</script>
+</body>
 </body>
 
+<script>
+// Inline chart test - if this works, iframes are the problem
+(function(){
+  var st=document.getElementById('inlineStatus');
+  st.textContent='⏳ inline chart...';
+  if(typeof Chart==='undefined'){st.textContent='❌ Chart not loaded in parent';return;}
+  st.textContent='✅ Chart loaded, rendering...';
+  var c=document.getElementById('inlineTest');
+  var ctx=c.getContext('2d');
+  new Chart(ctx,{type:'line',data:{labels:['A','B','C','D','E'],datasets:[{label:'Test',data:[1,3,2,4,3],borderColor:'#3fb950'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#8b949e'}}},scales:{x:{ticks:{color:'#8b949e'}},y:{ticks:{color:'#8b949e'}}}}});
+  st.textContent='✅ Inline chart rendered!';
+})();
+</script>
+</body>
 </body>
 </html<tbody><!-- KOREA_ROWS -->
 <tr><td style="font-size:10px;white-space:nowrap">1</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">0억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">0억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">2</td></tr>
