@@ -1,5 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script src="chart.umd.min.js"></script>
+<script>
+(function(){
+  var s=document.createElement('script');
+  s.src='chart.umd.min.js';
+  s.onload=function(){ window._chartReady=true; };
+  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
+  document.head.appendChild(s);
+})();
+</script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 185px;gap:8px;height:100%}
 .panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
@@ -34,7 +42,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1/2", "1/15", "2/1", "2/13", "3/1", "3/15", "4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22", "6/26", "7/1", "7/8", "7/14", "7/18", "7/22", "7/24", "7/28", "7/29", "7/30", "7/31"]
 
@@ -52,6 +60,6 @@ new Chart(ctx,{type:'line',
       y1:{position:'right',min:0,max:28,ticks:{color:'#8b949e',font:{size:8},stepSize:4},grid:{display:false},title:{display:true,text:'敞口% / $B',color:'#8b949e',font:{size:8}}}
     }}
   });
-},300);
+})();
 </script>
 </body></html>

@@ -1,5 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script src="chart.umd.min.js"></script>
+<script>
+(function(){
+  var s=document.createElement('script');
+  s.src='chart.umd.min.js';
+  s.onload=function(){ window._chartReady=true; };
+  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
+  document.head.appendChild(s);
+})();
+</script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 185px;gap:8px;height:100%}
 .panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
@@ -23,7 +31,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['5/1','5/15','6/1','6/10','6/15','6/20','6/22','6/25','6/28','7/1','7/5','7/10','7/13','7/17','7/20','7/22','7/24','7/27','7/28','7/29','7/30','7/31'];
 var profit=[45,55,65,72,78,82,85,80,72,60,48,35,28,22,18,15,10,12,15,18,22,25];
@@ -44,6 +52,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-},300);
+})();
 </script>
 </body></html>

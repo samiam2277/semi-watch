@@ -1,5 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script src="chart.umd.min.js"></script>
+<script>
+(function(){
+  var s=document.createElement('script');
+  s.src='chart.umd.min.js';
+  s.onload=function(){ window._chartReady=true; };
+  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
+  document.head.appendChild(s);
+})();
+</script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
 .panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
@@ -53,6 +61,6 @@ try{try{new Chart(ctx,{type:'bar',
     }
   }
 });
-  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}},300);
+  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}})();
 </script>
 </body></html>

@@ -1,5 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script src="chart.umd.min.js"></script>
+<script>
+(function(){
+  var s=document.createElement('script');
+  s.src='chart.umd.min.js';
+  s.onload=function(){ window._chartReady=true; };
+  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
+  document.head.appendChild(s);
+})();
+</script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 180px;gap:8px;height:100%}
 .panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
@@ -26,7 +34,7 @@
 </div>
 </div>
 <script>
-setTimeout(function(){
+(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708\u4e0a", "3\u6708\u4e0b", "4\u6708", "5\u6708\u4e0a", "5\u6708\u4e0b", "6\u6708\u4e0a", "6\u6708\u4e2d", "6\u6708\u4e0b", "7\u6708\u4e0a", "7/8-14", "7/15-21", "7/22-24", "7/25-28", "7/29", "7/30-31"]
 
@@ -46,6 +54,6 @@ new Chart(ctx,{type:'bar',
       y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){{return(v>=0?'+':'')+'$'+v+'亿'}}},grid:{display:false},title:{display:true,text:'累计/代理($亿)',color:'#d2991d',font:{size:8}}}
     }
   }});
-},300);
+})();
 </script>
 </body></html>
