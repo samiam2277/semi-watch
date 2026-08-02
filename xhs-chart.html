@@ -12,16 +12,13 @@
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
-<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">📕 小红书情绪判据</div>
-<div class="sig sig-r"><b>🔴 危险区（晒收益>70%）</b><br>6月中 "月赚千万"帖刷屏<br>→ 6/22 ATH 14,655 见顶<br>→ 次日开始暴跌</div>
-<div class="sig sig-y"><b>🟡 过渡区</b><br>5月 "终于解套"→"加仓！"<br>7月中 "要不要割肉"开始出现</div>
-<div class="sig sig-g"><b>🟢 底部区（晒亏损>65%）</b><br>7/28-29 "血亏50万"帖暴增<br>"再也不炒了"高频出现<br>→ 7/30-31 暴力反弹</div>
+<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">📕 情绪判据</div>
+<div class="sig sig-r"><b>🔴 晒收益>70% = 顶部</b><br>6月中 "月赚千万"刷屏<br>→ 6/22 ATH 14,655</div>
+<div class="sig sig-g"><b>🟢 晒亏损>65% = 底部</b><br>7/28-29 "血亏50万"暴增<br>→ 7/30-31 暴力反弹</div>
+<div class="sig sig-y"><b>🟡 当前: 偏底部</b><br>晒亏损62% 晒收益25%<br>散户尚未恢复信心</div>
 <div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
-<b style="color:#c9d1d9">散户情绪钟摆:</b><br>
-<span style="color:#f85149">顶部信号:</span> "晒收益"霸屏<br>
-<span style="color:#3fb950">底部信号:</span> "晒亏损"刷屏<br>
-<span style="color:#d2991d">当前:</span> 晒亏损62% → 偏底部<br>
-<span style="font-size:8px">*估算数据 基于KOSPI走势+搜索热度</span>
+<span style="color:#f85149">🔴收益帖</span> <span style="color:#3fb950">🟢亏损帖</span><br>
+<span style="font-size:8px">*估算数据 基于KOSPI+搜索热度</span>
 </div>
 </div>
 </div>
@@ -32,20 +29,21 @@ var labels=['5/1','5/15','6/1','6/10','6/15','6/20','6/22','6/25','6/28','7/1','
 var profit=[45,55,65,72,78,82,85,80,72,60,48,35,28,22,18,15,10,12,15,18,22,25];
 var loss=[55,45,35,28,22,18,15,20,28,40,52,65,72,78,82,85,90,88,85,82,78,75];
 var kospi=[8500,8700,8800,9200,9380,9385,9350,9200,8600,8200,7500,6800,6500,6200,6100,6000,6000,5563,5563,5663,5593,6595];
-var kospiS=kospi.map(function(v){{return v/40}});
-new Chart(ctx,{{type:'line',
-  data:{{labels:labels,datasets:[
-    {{label:'晒收益帖(%)',data:profit,borderColor:'#f85149',backgroundColor:'rgba(248,81,73,0.1)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'}},
-    {{label:'晒亏损帖(%)',data:loss,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'}},
-    {{label:'KOSPI(÷40)',data:kospiS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y'}}
-  ]}},
-  options:{{responsive:true,maintainAspectRatio:false,interaction:{{intersect:false,mode:'index'}},
-    plugins:{{legend:{{labels:{{color:'#8b949e',font:{{size:9}},usePointStyle:true,padding:14}}}}}},
-    scales:{{
-      x:{{ticks:{{color:'#8b949e',font:{{size:8}},maxTicksLimit:12}},grid:{{display:false}}}},
-      y:{{ticks:{{color:'#8b949e',font:{{size:8}},callback:function(v){{return v+'%'}}}},grid:{{color:'rgba(48,54,61,0.25)'}},min:0,max:100,title:{{display:true,text:'帖子占比%',color:'#8b949e',font:{{size:8}}}}}}
-    }}
-  }});
-}},300);
+var kospiS=kospi.map(function(v){return v/40});
+new Chart(ctx,{type:'line',
+  data:{labels:labels,datasets:[
+    {label:'晒收益帖(%)',data:profit,borderColor:'#f85149',backgroundColor:'rgba(248,81,73,0.1)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
+    {label:'晒亏损帖(%)',data:loss,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
+    {label:'KOSPI(÷40)',data:kospiS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y'}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
+    plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},
+    scales:{
+      x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},
+      y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){return v+'%'}},grid:{color:'rgba(48,54,61,0.25)'},min:0,max:100,title:{display:true,text:'帖子占比%',color:'#8b949e',font:{size:8}}}
+    }
+  }
+});
+},300);
 </script>
 </body></html>
