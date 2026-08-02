@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-02T22:50:25.841360",
-  "total": 119,
+  "generated_at": "2026-08-02T23:30:08.750902",
+  "total": 117,
   "bullish": 23,
   "bearish": 24,
-  "neutral": 72,
+  "neutral": 70,
   "bias": -0.01,
   "articles": [
     {
@@ -84,7 +84,7 @@
       "sentiment": "bull"
     },
     {
-      "title": "South Korea stocks plunge 11%, trading halted again as SK Hynix earnings deepen AI chip rout - Firstpost",
+      "title": "South Korea stocks plunge 11%, trading halted again as SK Hynix earnings deepen AI chip rout - firstpost.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTmdQSmRCMkNlUS1ZeElpamd0V1hXYVFYQ3NuMTV2bTBJX01QNkFpcmJUb2tzN0FROEFQWXJTQlRHaV8wSjhsWUNtTGRmYUFud2RxcjZRRml2Uy1mUHllZHI3Ymx3d1BVUkdGU0F6SWNtLS12Sng1dnZjRFJyYWgxaHNnVzFMMGJpZjMyWDRwQjlSTnpDMTJGRlJEWEh4ZWtnejRxbk91ZlFteEhJMFo3b2cyYjlYbk16NDRrZXVybTdUUdIBxwFBVV95cUxNRGJwOGNfbHVjS3E4WVk2M085MFhhbzFJMkdoNmNJS0dxWUlmb1Z5QnFGQjRUM0JUVVJwaFNDanVudVJEd1JKYlpZUzdFVkRzcDM1amdJakVXaldseldWMU4wWU5yX1A4aWE0Wmt4akZuUEtUVUh4aGhMNDhlQXNCWjB0Q3dkTlRRSXg3Tlo5dkZvZ2xOckgxUEJxY2NEMEc1VTdvVmdtbGlIOUI0a2xhaTNLN3RDN3NxYXBDcDRyUTlMX0xvdmVV?oc=5",
       "time": "Wed, 29 Jul 2026 04:45:57",
@@ -187,13 +187,6 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBaV19fQlVJNGZPOGlhUkNvVk5WTElwdFhKVnJYS09fcEZ4M0hyUXhEVVRWQnJ0ZkNQY2lWV2toaXk5eS1zWklMX2lkMGg5SWRQM2pyYW5DWGlId2hic2Z0Yks5dVhBeWhzdzZpWXJDUWdzNGNPS1E?oc=5",
       "time": "Tue, 28 Jul 2026 16:00:00",
       "sentiment": "bull"
-    },
-    {
-      "title": "22:16:53【美股AI硬件板块跌幅继续扩大 美光、AMD、闪迪等多股跌超10%】 - 财联社",
-      "source": "财联社",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BdGZKWEd2N0lVNGo0R1JnbHpFbUxTbVVhVWRfcGlBVGsxZnliZmNwVVdOMmFKUGNIb2hUc0drd2RvLWxVN0ZEaQ?oc=5",
-      "time": "Tue, 28 Jul 2026 14:16:53",
-      "sentiment": "neutral"
     },
     {
       "title": "AI泡沫的金丝雀，刚刚死去..... - 华尔街见闻",
@@ -355,6 +348,13 @@
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UM18tOV9QX3VZNzNtTk9rMjloVUoyU2g0aDJZQ0RtQmdvUnJ5d05RYi1fZ2s3Ym9WQ1FOblVITHVEQzA3Nm1meG1vV2JFRWx6M0FfWGFsLUp2VHVIakpjQUpKRUUxcXhQLXkwTlh4aGd4TS1RZEJOQUlFZUk?oc=5",
       "time": "Tue, 07 Jul 2026 16:16:24",
       "sentiment": "bear"
+    },
+    {
+      "title": "06:40:22【三星电子预计第二季度营业利润同比暴增1810%】 - 财联社",
+      "source": "财联社",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5sa3J6SW9rclhEX3hyck45TFpZTGdhV3IycVNQSmNleTNPWno2RUVuaks4OHBGN1ZmaFV3V2RXNUhiQzBIbU80bA?oc=5",
+      "time": "Tue, 07 Jul 2026 07:00:00",
+      "sentiment": "neutral"
     }
   ],
   "sources_used": [
