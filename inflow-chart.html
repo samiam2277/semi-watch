@@ -7,7 +7,7 @@
 .sig-r{background:rgba(248,81,73,0.12);border-left:3px solid #f85149}
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body>
+</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -23,7 +23,14 @@
 </div>
 </div>
 <script>
-function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+function initChart(){
+  var err=document.getElementById('err');
+  try{
+    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+    var c=document.getElementById('c');
+    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
+    var ctx=c.getContext('2d');
+    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['5/1','5/8','5/15','5/22','5/29','6/5','6/12','6/19','6/22','6/26','7/1','7/3','7/8','7/10','7/14','7/17','7/21','7/23','7/25','7/28','7/29','7/30','7/31'];
 var etfIn=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
@@ -31,7 +38,7 @@ var krForeign=[3,5,8,6,4,2,-5,-10,-15,-20,-25,-30,-5,0,8,3,6,2,-18,-35,-40,5,60]
 var total=etfIn.map(function(v,i){return v+(krForeign[i]||0)});
 var cumul=[0]; for(var i=0;i<total.length;i++) cumul.push(cumul[i]+total[i]); cumul.shift();
 
-new Chart(ctx,{type:'bar',
+try{try{new Chart(ctx,{type:'bar',
   data:{labels:labels,datasets:[
     {label:'ETF流入(亿$)',data:etfIn,backgroundColor:function(ctx){return etfIn[ctx.dataIndex]>=0?'rgba(88,166,255,0.7)':'rgba(248,81,73,0.7)'},borderRadius:2,stack:'stack1'},
     {label:'韩国外资(亿$)',data:krForeign,backgroundColor:function(ctx){return krForeign[ctx.dataIndex]>=0?'rgba(63,185,80,0.6)':'rgba(200,80,80,0.6)'},borderRadius:2,stack:'stack1'},
@@ -46,6 +53,6 @@ new Chart(ctx,{type:'bar',
     }
   }
 });
-}initChart();
+  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
 </script>
 </body></html>

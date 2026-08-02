@@ -8,7 +8,7 @@
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body>
+</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -26,13 +26,20 @@
 </div>
 </div>
 <script>
-function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+function initChart(){
+  var err=document.getElementById('err');
+  try{
+    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+    var c=document.getElementById('c');
+    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
+    var ctx=c.getContext('2d');
+    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['24/7','24/9','24/11','24/12','25/1','25/2','25/3','25/4','25/5','25/6','25/7','25/8','25/9','25/10','25/11','25/12','26/1','26/2','26/3','26/4','26/5','26/6','26/7','26/7下','8/1'];
 var influence=[30,45,95,80,65,55,70,88,72,60,50,40,35,55,75,60,85,50,45,40,35,30,42,25,20];
 var sox=[5500,5400,5800,7575,7400,7000,7080,8300,10300,11600,14342,13204,11800,11300,11600,12000,14655,7000,7500,9556,11600,14655,10447,11800,11800];
 var soxS=sox.map(function(v){return v/160});
-new Chart(ctx,{type:'line',
+try{new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
     {label:'特朗普影响力指数',data:influence,borderColor:'#f85149',backgroundColor:'rgba(248,81,73,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
     {label:'SOX(÷160)',data:soxS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y'}
@@ -45,6 +52,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-}initChart();
+  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
 </script>
 </body></html>

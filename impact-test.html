@@ -11,7 +11,7 @@ body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margi
 .diverge{font-size:9px;margin-top:2px}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
 </style>
-</head><body>
+</head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -51,7 +51,14 @@ SOX+8% 海力士+30% 涨停<br>
 </div>
 </div>
 <script>
-function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+function initChart(){
+  var err=document.getElementById('err');
+  try{
+    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+    var c=document.getElementById('c');
+    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
+    var ctx=c.getContext('2d');
+    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["7/8", "7/9", "7/10", "7/13", "7/14", "7/15", "7/16", "7/17", "7/20", "7/21", "7/22", "7/23", "7/24", "7/27", "7/28", "7/29", "7/30", "7/31"]
 var max=Math.max.apply(null,sox.map(Math.abs).concat(sk.map(Math.abs)));
@@ -61,7 +68,7 @@ var scaled=bias.map(function(b){return b*max});
 // 7/22-24: bias going negative but was positive=top divergence
 // 7/29: extreme negative bias but SK decline slowing=bottom divergence
 
-new Chart(ctx,{
+try{new Chart(ctx,{
   type:'line',
   data:{
     labels:labels,
@@ -84,6 +91,6 @@ new Chart(ctx,{
     }
   }
 });
-}initChart();
+  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
 </script>
 </body></html>

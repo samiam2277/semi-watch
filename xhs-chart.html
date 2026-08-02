@@ -8,7 +8,7 @@
 .sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
 .sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body>
+</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
 <div class="grid2">
 <div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
@@ -23,14 +23,21 @@
 </div>
 </div>
 <script>
-function initChart(){if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+function initChart(){
+  var err=document.getElementById('err');
+  try{
+    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
+    var c=document.getElementById('c');
+    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
+    var ctx=c.getContext('2d');
+    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['5/1','5/15','6/1','6/10','6/15','6/20','6/22','6/25','6/28','7/1','7/5','7/10','7/13','7/17','7/20','7/22','7/24','7/27','7/28','7/29','7/30','7/31'];
 var profit=[45,55,65,72,78,82,85,80,72,60,48,35,28,22,18,15,10,12,15,18,22,25];
 var loss=[55,45,35,28,22,18,15,20,28,40,52,65,72,78,82,85,90,88,85,82,78,75];
 var kospi=[8500,8700,8800,9200,9380,9385,9350,9200,8600,8200,7500,6800,6500,6200,6100,6000,6000,5563,5563,5663,5593,6595];
 var kospiS=kospi.map(function(v){return v/40});
-new Chart(ctx,{type:'line',
+try{try{new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
     {label:'晒收益帖(%)',data:profit,borderColor:'#f85149',backgroundColor:'rgba(248,81,73,0.1)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
     {label:'晒亏损帖(%)',data:loss,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y'},
@@ -44,6 +51,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-}initChart();
+  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}}initChart();
 </script>
 </body></html>
