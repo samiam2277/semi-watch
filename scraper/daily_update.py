@@ -61,7 +61,13 @@ except Exception as e:
 # ═══════════════════════════════════════
 # 3. 图表数据更新 (追加最新数据点)
 # ═══════════════════════════════════════
-log('📊 3/5 图表数据(暂停自动重建)')
+log('📊 3/5 图表重建...')
+try:
+    from chart_rebuilder import rebuild_all
+    n = rebuild_all()
+    log(f'  ✅ {n}个图表已更新')
+except Exception as e:
+    log(f'  ⚠️ 图表更新失败: {e}')
 
 # 所有图表的最新数据点模板 — 从prices获取当日涨跌
 def get_today_change(name):
