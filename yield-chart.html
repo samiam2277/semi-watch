@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
+.grid2{display:grid;grid-template-columns:1fr 185px;gap:8px;height:100%}
+.panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
+.panel .sig{padding:5px 7px;margin:2px 0;border-radius:4px;font-size:10px}
+.sig-r{background:rgba(248,81,73,0.15);border-left:3px solid #f85149}
+.sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
+.sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
+@media(max-width:480px){.grid2{grid-template-columns:1fr}}
+</style></head><body>
+<div class="grid2">
+<div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
+<div class="panel">
+<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">📐 利差判据</div>
+<div class="sig sig-r"><b>🔴 倒挂<−50bp</b><br>深度倒挂=衰退预期强<br>1月−60bp、6月−45bp<br>→ 风险资产承压</div>
+<div class="sig sig-g"><b>🟢 收窄→回正</b><br>倒挂收窄=预期改善<br>3月−15bp 4月−8bp<br>→ SOX同期+35%</div>
+<div class="sig sig-y"><b>🟡 当前 −28bp</b><br>小幅倒挂 方向不明<br>若持续收窄→利好半导体<br>若再扩大→风险</div>
+<div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
+倒挂最深: <span style="color:#f85149">−60bp (1月)</span><br>
+最浅: <span style="color:#3fb950">−8bp (4月)</span><br>
+当前: <span style="color:#d2991d">−28bp 中性偏谨慎</span>
+</div>
+</div>
+</div>
+<script>
+setTimeout(function(){
+var ctx=document.getElementById('c').getContext('2d');
+var labels=['24/7','24/9','24/11','25/1','25/3','25/5','25/7','25/9','25/11','26/1','26/2','26/3','26/4','26/5','26/6','26/7','8/1'];
+var spread=[-35,-42,-28,-20,-38,-55,-60,-48,-32,-60,-35,-15,-8,-22,-45,-38,-28];
+var sox=[5500,5400,5800,7575,7080,10300,14342,11800,11600,7000,7000,7500,9556,11600,14655,10447,11800];
+var soxS=sox.map(function(v){return v/160});
+new Chart(ctx,{type:'line',
+  data:{labels:labels,datasets:[
+    {label:'2Y/10Y利差(bp)',data:spread,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.1)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y',
+     segment:{borderColor:function(ctx){return ctx.p0.parsed.y<0&&ctx.p1.parsed.y<0?'#f85149':'#3fb950'}}},
+    {label:'SOX(÷160)',data:soxS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y'}
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
+    plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},
+    scales:{
+      x:{ticks:{color:'#8b949e',font:{size:7},maxTicksLimit:12},grid:{display:false}},
+      y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+v+'bp'}},grid:{color:'rgba(48,54,61,0.25)'},
+        title:{display:true,text:'利差(bp) / SOX÷160',color:'#8b949e',font:{size:8}}}
+    }
+  }
+});
+},300);
+</script>
+</body></html>
