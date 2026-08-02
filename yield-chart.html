@@ -6,7 +6,7 @@
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 185px;gap:8px;height:100%}
@@ -32,7 +32,7 @@
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=['24/7','24/9','24/11','25/1','25/3','25/5','25/7','25/9','25/11','26/1','26/2','26/3','26/4','26/5','26/6','26/7','8/1'];
 var spread=[-35,-42,-28,-20,-38,-55,-60,-48,-32,-60,-35,-15,-8,-22,-45,-38,-28];
@@ -53,6 +53,6 @@ new Chart(ctx,{type:'line',
     }
   }
 });
-})();
+},300);
 </script>
 </body></html>

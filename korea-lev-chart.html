@@ -6,7 +6,7 @@
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
@@ -36,7 +36,7 @@ JP摩根:去杠杆<span style="color:#3fb950">90%+</span> | HSBC:<span style="co
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22", "6/24", "6/28", "7/3", "7/8", "7/13", "7/17", "7/20", "7/22", "7/24", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script>
@@ -46,7 +46,7 @@ var labels=["4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22",
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
@@ -76,7 +76,7 @@ JP摩根:去杠杆<span style="color:#3fb950">90%+</span> | HSBC:<span style="co
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22", "6/24", "6/28", "7/3", "7/8", "7/13", "7/17", "7/20", "7/22", "7/24", "7/28", "7/29", "7/30", "7/31"]
 var kospiS=kospi.map(function(v){{return v/40}});
@@ -91,6 +91,6 @@ new Chart(ctx,{type:'line',
     scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false}},
       y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'万亿₩',color:'#8b949e',font:{size:8}}}}
   }});
-})();
+},300);
 </script>
 </body></html>

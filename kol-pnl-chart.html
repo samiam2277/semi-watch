@@ -6,7 +6,7 @@
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
@@ -33,7 +33,7 @@ Burry空头:<span style="color:#3fb950">+35%</span>
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708\u521d", "6/15", "6/22", "6/28", "7/5", "7/12", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
 
@@ -51,6 +51,6 @@ new Chart(ctx,{type:'line',
       y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){{return(v>=0?'+':'')+v+'%'}}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'累计盈亏%',color:'#8b949e',font:{size:8}}}
     }
   }});
-})();
+},300);
 </script>
 </body></html>

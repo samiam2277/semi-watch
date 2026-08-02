@@ -6,7 +6,7 @@
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 170px;gap:8px;height:100%}
@@ -34,7 +34,7 @@
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22", "6/26", "7/1", "7/3", "7/8", "7/10", "7/14", "7/17", "7/21", "7/23", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script>
@@ -44,7 +44,7 @@ var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22",
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 170px;gap:8px;height:100%}
@@ -72,7 +72,7 @@ var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22",
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22", "6/26", "7/1", "7/3", "7/8", "7/10", "7/14", "7/17", "7/21", "7/23", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
 <script>
@@ -82,7 +82,7 @@ var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22",
   s.onload=function(){ window._chartReady=true; };
   s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
   document.head.appendChild(s);
-})();
+},300);
 </script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 170px;gap:8px;height:100%}
@@ -110,7 +110,7 @@ var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22",
 </div>
 </div>
 <script>
-(function wait(){if(!window._chartReady){setTimeout(wait,100);return;}
+setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
 var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22", "6/26", "7/1", "7/3", "7/8", "7/10", "7/14", "7/17", "7/21", "7/23", "7/25", "7/28", "7/29", "7/30", "7/31"]
 var inflow=weekly.map(function(v){{return v>0?v:0}});
@@ -130,6 +130,6 @@ new Chart(ctx,{type:'bar',
       y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){{return'$'+v+'亿'}}},grid:{display:false},title:{display:true,text:'累计',color:'#d2991d',font:{size:8}}}
     }
   }});
-})();
+},300);
 </script>
 </body></html>
