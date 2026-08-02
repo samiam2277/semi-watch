@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-03T02:01:16.191179",
-  "total": 115,
+  "generated_at": "2026-08-03T02:31:28.201645",
+  "total": 116,
   "bullish": 25,
-  "bearish": 23,
-  "neutral": 67,
-  "bias": 0.02,
+  "bearish": 22,
+  "neutral": 69,
+  "bias": 0.03,
   "articles": [
     {
       "title": "SK Hynix's Profits Explode 550%, but Its $31 Billion Spending Plan Sends Investors Running - 24/7 Wall St.",
@@ -77,7 +77,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Why SK Hynix shares crashed despite record Q2 earnings - economictimes.com",
+      "title": "Why SK Hynix shares crashed despite record Q2 earnings - The Economic Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNanM3amdzTkZMTU94M0RuemxWQ1VDMnBVYkp3cV9ZZ2oxMUNfOGowRTBJX2liVEJKZTVydHpzRm53TXVTYmk3RUJqbEZISDlhLU5RMlIxai1UU0RPTDFTaVdJdXZSNV9wMjFSZjlQeFBtMTNTdXl2M0hfeVZKelVMWThMMGZPQ0dwdkxDcDI0OUFVU29HRU1JcmRzRnRHQ2VsaUtKa3lGeTE0Yk1xeU8xT0trNk5tTFVzNUZfX1FoRVRhSF9qSy13ZA?oc=5",
       "time": "Wed, 29 Jul 2026 06:16:03",
@@ -98,7 +98,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "After 'the strongest in history,' SK Hynix is now struggling to surpass expectations. - Moomoo",
+      "title": "After 'the strongest in history,' SK Hynix is now struggling to surpass expectations. - moomoo.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd2QxVnV4UVViWE9mSFpaV1J1YXlaci1zaUlXM2NDMHMyUVpISzRFeW5EQUZrdnFjUlBoTGUxYlc3OUx3V2ZRQ3F1M3pTNF9ud0tRVnB6N2VjS0RiYlEtejNUSkpabVZCWXZiR2NrRFBIU3lQNUUyOEdDN0dXNzZ5WUU2aFVkQzlUeDRrZFB3akFIQzFxX1VObFRmd1FacGdi?oc=5",
       "time": "Wed, 29 Jul 2026 04:38:50",
@@ -154,7 +154,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "South Korea's Kospi enters bear market, plunges 20% from peak. What's spooking investors? - economictimes.com",
+      "title": "South Korea's Kospi enters bear market, plunges 20% from peak. What's spooking investors? - The Economic Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNNXhNTGVOeHZFU2NxVlhCeVNUcC1ITmhlM1FMclFCQnN1SUE3Y2Fybzc0c0RFSHhLTEg1a2lRLUx5QkdxUUV1TUw4cjRDTXU4UHN1U3hjZGNnM3pycm9uT09KYWQzNlhoSjZyeG4tUGZlNnRNLThnYmJyTWZWZk9VVEFkZEt5cjJHOVJHQnFrZ3NNdjNUY3VNQ3ZMVTBRNllXdi1EVW50Y0tkUEZMOWtwOVFybVZqRWk4Y1FTblpjbU95V25nUGV6Y25MQ2U0X1l3bUdCQVd5eWUwRWVtQU9hS0Q5NHZCVFY5UTdJMnZvc9IB9AFBVV95cUxOekdUZl9iY21nTGkzOHhCaWIyM3lIZ2tDcl9TbzZXREVkelAwc0xQWlN0ZHUzOW02QW5IX3IyYjlsNk9VRmVqbk9rYXk0czVaU29jQzJMamdSbVdVUlZXSE1EM0x5X3k2TGZiMnBIZzBEUlJxSS1JNUNURmRpRlZBWmxibzlEMUs0ZDNoQzRKckFqSjNHaVJPVmlSTjRmR3VrTGxYWU82WjZxZkFpRU96RG5LYmdmbUR1TzBuZEdyNTVuRFpVdjM0akY2VGZ2ZFN1OFRldHVNNE9EQWdzZl9OMDlya2swV2J2NmxMV1J2TzRWTFFB?oc=5",
       "time": "Wed, 08 Jul 2026 07:00:00",
@@ -259,7 +259,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "AI crash coming closer? South Korea’s Kospi plunges 10%, triggers trading halt - economictimes.com",
+      "title": "AI crash coming closer? South Korea’s Kospi plunges 10%, triggers trading halt - The Economic Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTzgwZTRTQWlUY0VPdW1rX2VTYXZyeThKbVd3d0VDNy1WRzQ0Ul9jak1TcmlneE5pNXdRRDdCUnE0bER1UGNPWVRyTmpwSDRjSWtVc3FSaFNNSWlQTktVYlZ0M2FoQ0ZxMGRBeUl4YU05SmlUOHBqMlF6cHQtUUZ5THdHQXYzbWVJUUN5bmFuMDVrMGd0d1FOeUpoREhKNnRTeWY2ZGlHRDVYYlBOcFhKZXpaR1BmX1ZTVFNYLUp5blZLM3VMaHdEajFPNkNXYV82NUFmMmJtVVZaYkRQT3U2YdIB5gFBVV95cUxQNnE3VGhKeVRxQk9BTDN5TjNVNXNXdHBrYVFqNGxpaVNuZWVYVTFpWTdHRHpqR3VNNXJTS3NEM1RrRTViSVB3cGt5T3JOU2VZd3lJX3ZjQWdvWVZrNjJTUFNubHJhVUhfMXFRbktkZ1drZEZlUnFuVzNRQVE0T0J4bkFRbk9POG5FUUZTOW9SUGI1VGVLMm9QdmNQNEFac0ljbFlUZUNoLTJYYUFDRTlBMFJDRXNRaE9TR1hpZUxaTzBGMkN0cW0yaHc2ZUk0eVlaMVNmR1d2emtuYnRWWllqM01WRUowZw?oc=5",
       "time": "Tue, 23 Jun 2026 07:00:00",
