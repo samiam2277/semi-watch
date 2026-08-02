@@ -42,14 +42,18 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .scroll-table table{width:100%;border-collapse:collapse}
 .scroll-table th{position:sticky;top:0;background:var(--card);z-index:1;padding:4px 6px;font-size:10px;color:var(--text2);border-bottom:1px solid var(--border);text-align:left}
 .scroll-table td{padding:3px 6px;border-bottom:1px solid rgba(48,54,61,0.3)}
+
+.card-auto { background: #1a2030; border: 1px solid #2a4a6d; border-left: 3px solid #58a6ff; }
+.card-auto h3 { color: #58a6ff; }
+.card-weekly { background: #1a2030; border: 1px solid #2a4a3d; border-left: 3px solid #3fb950; }
+.card-weekly h3 { color: #3fb950; }
 </style>
-<script src="chart.umd.min.js"></script>
 </head>
 <body>
 <div class="header">
 <h1>📡 SemiWatch 半导体监控面板</h1>
 <div class="sub">SOX · VIX · 韩国外资 · 杠杆率 · ETF流量 · 消息情绪 · 影响走势</div>
-<div class="update-time" id="updateTime">✅ 数据就绪（7/31收盘）</div>
+<div class="update-time" id="updateTime">✅ 数据更新于 2026-08-02 22:36（每日自动）</div>
 </div>
 
 <div class="grid grid-4">
@@ -60,7 +64,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 </div>
 
 <div class="grid grid-3" style="margin-top:16px">
-<div class="card">
+<div class="card-auto">
 <h3>🇰🇷 韩国外资 & 机构流向（近30日👇）</h3>
 <div class="scroll-table"><table>
 <thead><tr><th>日期</th><th>事件</th><th>外资(亿₩)</th><th>机构(亿₩)</th><th>散户(亿₩)</th><th>KOSPI</th></tr></thead>
@@ -92,109 +96,12 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 </div>
 </div>
 
-<div class="card">
-<h3>⚖️ 韩国杠杆率走势（4月→7月）</h3>
-<div style="display:flex;gap:12px">
-<div style="flex:1"><canvas id="korea_lev_cv" style="width:100%;height:260px;max-height:260px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🔴信用贷款 🟡杠杆ETF 🔵KOSPI(÷40) | JP摩根:去杠杆90%+✅ HSBC:远未完成⚠️</div>
-<div style="font-s
-</div>
-<div style="width:170px;font-size:10px;color:var(--text2);padding-left:8px;border-left:1px solid var(--border)">
-<div style="font-weight:600;color:var(--text);margin-bottom:6px;font-size:11px">📐 关键节点</div>
-<div style="padding:3px 0;color:#f85149"><b>5/27</b> 杠杆ETF上市<br>AUM 0→₩4.9万亿</div>
-<div style="padding:3px 0;color:#f85149"><b>6/22-24</b> 巅峰<br>信用贷款₩38.6万亿ATH</div>
-<div style="padding:3px 0;color:#f85149"><b>6/23</b> 第一次熔断<br>ETF单日-25%+</div>
-<div style="padding:3px 0;color:#d2991d"><b>7/13</b> 第二次熔断<br>120万+账户追缴</div>
-<div style="padding:3px 0;color:#d2991d"><b>7/28</b> 连续熔断<br>KOSPI -10.8%</div>
-<div style="padding:3px 0;color:#3fb950"><b>7/31</b> 新规生效<br>交易量-75%</div>
-</div></div>ize:10px;color:var(--text2);margin-top:4px;text-align:center">
-<span style="color:#f85149">🔴信用贷款</span> <span style="color:#d2991d">🟡杠杆ETF</span> <span style="color:#58a6ff">🔵KOSPI(÷40)</span>
-</div>
-<div style="font-size:10px;color:var(--text2);margin-top:8px;border-top:1px solid var(--border);padding-top:6px">
-JP摩根:去杠杆90%+✅ | HSBC:远未完成⚠️ | 7/31新规:交易量-75%
-</div>
-</div>
-
-<div class="card">
-<h3>🎯 底部信号清单(5/9✅)</h3>
-<div class="checklist-item"><span class="dot dot-green"></span>较ATH跌>40%✅</div>
-<div class="checklist-item"><span class="dot dot-green"></span>Q2财报落地✅</div>
-<div class="checklist-item"><span class="dot dot-green"></span>外资连续2天净买✅</div>
-<div class="checklist-item"><span class="dot dot-green"></span>散户割肉✅</div>
-<div class="checklist-item"><span class="dot dot-green"></span>杠杆ETF新规落地✅</div>
-<div class="checklist-item"><span class="dot dot-red"></span>外资连续5天+净买❌</div>
-<div class="checklist-item"><span class="dot dot-red"></span>信用贷款<₩28万亿❌</div>
-<div class="checklist-item"><span class="dot dot-yellow"></span>VIX<20⚠️</div>
-<div class="checklist-item"><span class="dot dot-yellow"></span>布伦特<$90⚠️</div>
-</div>
-</div>
-
-<div class="grid grid-1-2" style="margin-top:16px">
-<div class="card">
-<h3>📰 消息情绪</h3>
-<div id="newsContainer">
-<div class="metric"><span class="label">🟢利好</span><span class="value up" id="bullCount">8条</span></div>
-<div class="metric"><span class="label">🔴利空</span><span class="value down" id="bearCount">5条</span></div>
-<div class="metric"><span class="label">偏度</span><span class="value" id="biasScore">+0.21🟢</span></div>
-<div class="score-bar"><div class="score-dot" id="biasDot" style="left:60%"></div></div>
-<div id="newsList" style="max-height:300px;overflow-y:auto;font-size:12px;margin-top:8px"></div>
-<button class="refresh-btn" style="margin-top:12px;width:100%" onclick="refreshNews()">🔄刷新新闻(需后端)</button>
-</div>
-</div>
-
-<div class="card">
-<h3>📈 消息情绪 vs 价格走势（近18个交易日）</h3>
-<div style="display:flex;gap:12px">
-<div style="flex:1"><canvas id="impact_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🟢消息偏度 🔵SOX% 🟡SK% | 相关性≈0.85</div>
-
-</div>
-<div style="width:175px;font-size:10px;color:var(--text2);padding-left:8px;border-left:1px solid var(--border)">
-<div style="font-weight:600;color:var(--text);margin-bottom:6px;font-size:11px">📐 背离信号</div>
-<div style="padding:3px 0;color:#f85149"><b>🔴6/22-25 顶部</b><br>利好不再涨+内部人套现</div>
-<div style="padding:3px 0;color:#f85149"><b>🔴7/22-23 短期顶</b><br>GOOGL云+82%但SOX不涨</div>
-<div style="padding:3px 0;color:#3fb950"><b>🟢7/29 卖压衰竭</b><br>利空-0.7但跌幅缩小</div>
-<div style="padding:3px 0;color:#3fb950"><b>🟢7/30-31 底部</b><br>利好获强力回应+30%</div>
-<div style="margin-top:4px;font-size:9px">🟢底部:利空不跌+利好暴涨<br>🔴顶部:利好不涨+利空暴跌</div>
-</div></div><div id="impact_status" style="font-size:10px;color:var(--text2);text-align:center"></div>
-<div style="font-size:10px;color:var(--text2);margin-top:4px;display:flex;gap:16px;justify-content:center">
-<span>🟢消息偏度</span><span style="color:#58a6ff">🔵SOX%</span><span style="color:#d2991d">🟡SK海力士%</span>
-</div>
-</div>
-</div>
-
-<div class="grid grid-2" style="margin-top:16px">
-<div class="card">
-<h3>📊 SOX杠杆率走势（1月→7月）</h3>
-<div style="display:flex;gap:12px">
-<div style="flex:1"><canvas id="sox_lev_cv" style="width:100%;height:260px;max-height:260px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🔵SOX 🟡对冲基金敞口 🔴SOXL AUM | 当前敞口~12% 健康区</div>
-<div s
-</div>
-<div style="width:175px;font-size:10px;color:var(--text2);padding-left:8px;border-left:1px solid var(--border)">
-<div style="font-weight:600;color:var(--text);margin-bottom:6px;font-size:11px">📐 拥挤度判据</div>
-<div style="padding:3px 0;color:#f85149"><b>🔴>20% 危险</b><br>6月中24%极值→ATH暴跌29%</div>
-<div style="padding:3px 0;color:#d2991d"><b>🟡12-20% 中性</b><br>正常配置 方向看基本面</div>
-<div style="padding:3px 0;color:#3fb950"><b>🟢8-12% 健康</b><br>当前~12%→未拥挤</div>
-<div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
-<b>拥挤三信号:</b><br>
-1️⃣敞口>20%仍加仓<br>
-2️⃣内部人密集套现<br>
-3️⃣ETF脉冲式巨量
-</div>
-</div></div>tyle="font-size:10px;color:var(--text2);margin-top:4px;text-align:center">
-<span style="color:#58a6ff">🔵SOX(÷100)</span> <span style="color:#f85149">🔴SOXL AUM</span> <span style="color:#d2991d">🟡对冲基金敞口</span>
-</div>
-<div style="font-size:10px;color:var(--text2);margin-top:8px;border-top:1px solid var(--border);padding-top:6px">
-对冲基金敞口:14%→10.3% | SOXL AUM:$163B→$80B | 强平:36万账户
-</div>
-</div>
-
-<div class="card">
+<div class="card-auto">
 <h3>📊 KOSPI + 外资 近30日👇</h3>
 <div class="scroll-table"><table>
 <thead><tr><th>日期</th><th>KOSPI</th><th>外资SK</th><th>事件</th></tr></thead>
-<tbody><tr><td style="font-size:10px">7/1</td><td class="up" style="font-size:11px;text-align:right;font-weight:600">13,353</td><td class="down" style="font-size:10px;text-align:right">-3,600亿</td><td style="font-size:9px;color:#8b949e">H1末出逃</td></tr>
+<tbody><!-- SOX_ROWS -->
+<tr><td style="font-size:10px">7/1</td><td class="up" style="font-size:11px;text-align:right;font-weight:600">13,353</td><td class="down" style="font-size:10px;text-align:right">-3,600亿</td><td style="font-size:9px;color:#8b949e">H1末出逃</td></tr>
 <tr><td style="font-size:10px">7/2</td><td class="neutral" style="font-size:11px;text-align:right;font-weight:600">12,626</td><td class="down" style="font-size:10px;text-align:right">-2,800亿</td><td style="font-size:9px;color:#8b949e">月初暴跌</td></tr>
 <tr><td style="font-size:10px">7/3</td><td class="neutral" style="font-size:11px;text-align:right;font-weight:600">12,500</td><td class="down" style="font-size:10px;text-align:right">-1,500亿</td><td style="font-size:9px;color:#8b949e">休市前</td></tr>
 <tr><td style="font-size:10px">7/7</td><td class="neutral" style="font-size:11px;text-align:right;font-weight:600">12,301</td><td class="down" style="font-size:10px;text-align:right">-2,100亿</td><td style="font-size:9px;color:#8b949e">独立日后</td></tr>
@@ -216,7 +123,67 @@ JP摩根:去杠杆90%+✅ | HSBC:远未完成⚠️ | 7/31新规:交易量-75%
 <tr><td style="font-size:10px">7/30</td><td class="down" style="font-size:11px;text-align:right;font-weight:600">11,303</td><td class="up" style="font-size:10px;text-align:right">+5,876亿</td><td style="font-size:9px;color:#8b949e">外资转买!</td></tr>
 <tr><td style="font-size:10px">7/31</td><td class="up" style="font-size:11px;text-align:right;font-weight:600">14,600</td><td class="up" style="font-size:10px;text-align:right">+4,715亿</td><td style="font-size:9px;color:#8b949e">涨停!</td></tr>
 </tbody>
+<!-- /SOX_ROWS --></tbody>
 </table></div>
+</div>
+
+<div class="card">
+<h3>🎯 底部信号清单(5/9✅)</h3>
+<div class="checklist-item"><span class="dot dot-green"></span>较ATH跌>40%✅</div>
+<div class="checklist-item"><span class="dot dot-green"></span>Q2财报落地✅</div>
+<div class="checklist-item"><span class="dot dot-green"></span>外资连续2天净买✅</div>
+<div class="checklist-item"><span class="dot dot-green"></span>散户割肉✅</div>
+<div class="checklist-item"><span class="dot dot-green"></span>杠杆ETF新规落地✅</div>
+<div class="checklist-item"><span class="dot dot-red"></span>外资连续5天+净买❌</div>
+<div class="checklist-item"><span class="dot dot-red"></span>信用贷款<₩28万亿❌</div>
+<div class="checklist-item"><span class="dot dot-yellow"></span>VIX<20⚠️</div>
+<div class="checklist-item"><span class="dot dot-yellow"></span>布伦特<$90⚠️</div>
+</div>
+</div>
+
+<div class="grid grid-1-2" style="margin-top:16px">
+<div class="card-auto">
+<h3>📰 消息情绪</h3>
+<div id="newsContainer">
+<div class="metric"><span class="label">🟢利好</span><span class="value up" id="bullCount">8条</span></div>
+<div class="metric"><span class="label">🔴利空</span><span class="value down" id="bearCount">5条</span></div>
+<div class="metric"><span class="label">偏度</span><span class="value" id="biasScore">+0.21🟢</span></div>
+<div class="score-bar"><div class="score-dot" id="biasDot" style="left:60%"></div></div>
+<div id="newsList" style="max-height:300px;overflow-y:auto;font-size:12px;margin-top:8px"></div>
+<button class="refresh-btn" style="margin-top:12px;width:100%" onclick="refreshNews()">🔄刷新新闻(需后端)</button>
+</div>
+</div>
+
+<div class="card-weekly">
+<h3>📈 消息情绪 vs 价格走势（近18个交易日）</h3>
+<iframe src="impact-test.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
+<div style="font-size:10px;color:var(--text2);margin-top:4px;display:flex;gap:16px;justify-content:center">
+<span>🟢消息偏度</span><span style="color:#58a6ff">🔵SOX%</span><span style="color:#d2991d">🟡SK海力士%</span>
+</div>
+</div>
+</div>
+
+<div class="grid grid-2" style="margin-top:16px">
+<div class="card">
+<h3 style="color:#3fb950">📊 SOX杠杆率走势（1月→7月）</h3>
+<iframe src="sox-lev-chart.html" style="width:100%;height:260px;border:none;border-radius:4px"></iframe>
+<div style="font-size:10px;color:var(--text2);margin-top:4px;text-align:center">
+<span style="color:#58a6ff">🔵SOX(÷100)</span> <span style="color:#f85149">🔴SOXL AUM</span> <span style="color:#d2991d">🟡对冲基金敞口</span>
+</div>
+<div style="font-size:10px;color:var(--text2);margin-top:8px;border-top:1px solid var(--border);padding-top:6px">
+对冲基金敞口:14%→10.3% | SOXL AUM:$163B→$80B | 强平:36万账户
+</div>
+</div>
+
+<div class="card-weekly">
+<h3>⚖️ 韩国杠杆率走势（4月→7月）</h3>
+<iframe src="korea-lev-chart.html" style="width:100%;height:260px;border:none;border-radius:4px"></iframe>
+<div style="font-size:10px;color:var(--text2);margin-top:4px;text-align:center">
+<span style="color:#f85149">🔴信用贷款</span> <span style="color:#d2991d">🟡杠杆ETF</span> <span style="color:#58a6ff">🔵KOSPI(÷40)</span>
+</div>
+<div style="font-size:10px;color:var(--text2);margin-top:8px;border-top:1px solid var(--border);padding-top:6px">
+JP摩根:去杠杆90%+✅ | HSBC:远未完成⚠️ | 7/31新规:交易量-75%
+</div>
 </div>
 
 <div class="card">
@@ -251,19 +218,8 @@ JP摩根:去杠杆90%+✅ | HSBC:远未完成⚠️ | 7/31新规:交易量-75%
 
 <div class="card">
 <h3>🔄 板块资金流向: 软件 vs 半导体（5月→7月）</h3>
-<div style="display:flex;gap:12px">
-<div style="flex:1"><canvas id="software_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🟢软件IGV 🟣Mag7 🟢半导体SOXX | 7月弃硬投软: 软件+6% vs 半导体-25%</div>
-<d
-</div>
-<div style="width:165px;font-size:10px;color:var(--text2);padding-left:8px;border-left:1px solid var(--border)">
-<div style="font-weight:600;color:var(--text);margin-bottom:6px;font-size:11px">📐 轮动节点</div>
-<div style="padding:3px 0;color:#f85149"><b>6/22 SOX ATH</b><br>半导体见顶 硬件流出</div>
-<div style="padding:3px 0;color:#3fb950"><b>7/8 SOXX+$54亿</b><br>ETF逆势抄底</div>
-<div style="padding:3px 0;color:#3fb950"><b>7/22 GOOGL财报</b><br>弃硬投软加速</div>
-<div style="padding:3px 0;color:#f85149"><b>7/28-29 熔断</b><br>硬件恐慌底</div>
-<div style="padding:3px 0;color:#3fb950"><b>7/30 MSFT财报</b><br>硬件暴力反弹</div>
-</div></div>iv style="font-size:10px;color:var(--text2);margin-top:4px;text-align:center">
+<iframe src="software-flow-chart.html" style="width:100%;height:280px;border:none;border-radius:4px"></iframe>
+<div style="font-size:10px;color:var(--text2);margin-top:4px;text-align:center">
 <span style="color:#3fb950">🟢软件ETF IGV</span> <span style="color:#a371f7">🟣Mag7加权</span> <span style="color:#58a6ff">🔵半导体SOXX</span>
 </div>
 <div style="font-size:10px;color:var(--text2);margin-top:6px;border-top:1px solid var(--border);padding-top:4px">
@@ -275,16 +231,14 @@ JP摩根:去杠杆90%+✅ | HSBC:远未完成⚠️ | 7/31新规:交易量-75%
     <div class="grid grid-2" style="margin-top:16px">
 <div class="card">
 <h3>📊 美股SOX机构资金流向（近4个月）</h3>
-<canvas id="sox_flow_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🔵周度流入(柱) 🟢累计流入(线) | 5月→7月 SOXX+SMH合计</div>
+<iframe src="sox-flow-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 <div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">
 🔵周度流入(柱) <span style="color:#3fb950">🟢累计流入(线)</span> | 5月→7月 SOXX+SMH合计
 </div>
 </div>
 <div class="card">
 <h3>🏢 Mag7大科技机构资金流向（近8个月）</h3>
-<canvas id="mag7_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🔵Mag7净流向(柱) 🟡累计(线) | 8个月净流向: 机构仍净多</div>
+<iframe src="mag7-flow-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 <div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">
 🔵Mag7净流向(柱) <span style="color:#d2991d">🟡累计(线)</span> <span style="color:#3fb950">🟢MSFT</span> <span style="color:#a371f7">🟣GOOGL</span>(代理线)
 </div>
@@ -292,40 +246,33 @@ JP摩根:去杠杆90%+✅ | HSBC:远未完成⚠️ | 7/31新规:交易量-75%
 </div>
 
 <div class="grid grid-3" style="margin-top:16px">
-<div class="card">
+<div class="card-weekly">
 <h3>📊 Put/Call 认估认购比率（近8个月）</h3>
-<canvas id="putcall_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">P/C>1.2恐慌 P/C<0.6贪婪 当前~0.85中性</div>
+<iframe src="putcall-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 </div>
-<div class="card">
+<div class="card-weekly">
 <h3>💳 HYG 高收益债走势（近8个月）</h3>
-<canvas id="hyg_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🟡HYG 🔵SOX(对标) | HYG$74.5 弱企稳</div>
+<iframe src="hyg-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 </div>
 <div class="card">
-<h3>🐦 推特KOL 盈亏走势（近8个月）</h3>
-<canvas id="kol_cv" style="width:100%;height:280px;max-height:280px"></canvas>
-<div style="font-size:10px;color:var(--text2);text-align:center;margin-top:4px">🔴SA 🔵存储多头 🟡杠杆党 🟣Burry空头 | SA+439%→爆仓</div>
+<h3>📊 美债2Y/10Y利差（近2年）</h3>
+<iframe src="yield-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 </div>
 </div>
-
-<div class="card" style="grid-column:1/-1">
 
 <div class="grid grid-3" style="margin-top:16px">
 <div class="card">
 <h3>📕 小红书姐妹情绪（近3个月）</h3>
-<canvas id="xhs_cv" style="width:100%;height:280px;max-height:280px"></canvas>
+<iframe src="xhs-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 </div>
 <div class="card">
-<h3>📊 美债2Y/10Y利差（近2年）</h3>
-<canvas id="yield_cv" style="width:100%;height:280px;max-height:280px"></canvas>
+<h3>🐦 推特KOL 盈亏走势（近8个月）</h3>
+<iframe src="kol-pnl-chart.html" style="width:100%;height:300px;border:none;border-radius:4px"></iframe>
 </div>
-<div class="card">
-<h3>💰 半导体增量资金（ETF+韩资 近4个月）</h3>
-<canvas id="inflow_cv" style="width:100%;height:280px;max-height:280px"></canvas>
 </div>
 </div>
 
+<div class="card" style="grid-column:1/-1">
 <h3>📅 前瞻日历：未来三个月关键事件</h3>
 <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;font-size:12px">
 <div>
@@ -417,175 +364,32 @@ async function refreshNews(){
   }
 }
 </script>
-
-
-
-<script>
-(function(){
-if(typeof Chart==="undefined")return;
-
-(function(){ /* korea-lev-chart.html */
-var ctx=document.getElementById("korea_lev_cv").getContext("2d");
-
-var labels=["4/1","4/15","5/1","5/15","5/27","6/5","6/12","6/18","6/22","6/24","6/28","7/3","7/8","7/13","7/17","7/20","7/22","7/24","7/28","7/29","7/30","7/31"];
-var credit=[30.3,31,32,33,34.2,35.5,36.5,37.5,38.2,38.63,37.8,36.5,35,33.8,33.2,33,32.8,32.67,32.5,32.4,33,32];
-var etfAUM=[0,0,2,3.5,4.9,7.5,10.5,13.5,15,15.93,14.5,12,9.5,9.34,8,7,6.5,5.5,4.8,4.5,5,5];
-var kospi=[7500,8200,8500,8700,9000,9100,9200,9350,9385,9200,8600,8000,7500,6500,6200,6100,6000,6000,5563,5663,5593,6595];
-var kospiS=kospi.map(function(v){return v/40});
-new Chart(ctx,{type:'line',data:{labels:labels,datasets:[
-{label:'信用贷款(万亿₩)',data:credit,borderColor:'#f85149',backgroundColor:'rgba(248,81,73,0.06)',fill:true,tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'},
-{label:'杠杆ETF AUM(万亿₩)',data:etfAUM,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.06)',fill:true,tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'},
-{label:'KOSPI(÷40)',data:kospiS,borderColor:'#58a6ff',tension:0.4,pointRadius:1.5,borderWidth:2,borderDash:[5,3],yAxisID:'y'}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false}},y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'万亿₩',color:'#8b949e',font:{size:8}}}}}});
-
-})();
-
-(function(){ /* sox-lev-chart.html */
-var ctx=document.getElementById("sox_lev_cv").getContext("2d");
-
-var labels=["1/2","1/15","2/1","2/13","3/1","3/15","4/1","4/15","5/1","5/15","5/27","6/5","6/12","6/18","6/22","6/26","7/1","7/8","7/14","7/18","7/22","7/24","7/28","7/29","7/30","7/31"];
-var sox=[7575,7400,7200,7000,7080,7400,8300,9556,10300,11000,11600,12000,12657,14342,14655,13204,13353,12301,13171,11768,14635,13482,10447,10447,11303,11800];
-var hfExp=[8,7.8,7.5,7.2,9,11,13,15,17,20,22,24,23,22,24,20,19,14,13,12,11,10.5,10.3,10.3,11,12];
-var soxlAUM=[50,48,46,45,55,70,90,125,145,155,163,160,158,155,160,145,130,115,108,105,100,95,85,80,95,100];
-var soxS=sox.map(function(v){return v/100});
-new Chart(ctx,{type:'line',data:{labels:labels,datasets:[
-{label:'SOX(÷100)',data:soxS,borderColor:'#58a6ff',tension:0.4,pointRadius:0,borderWidth:1.5,yAxisID:'y'},
-{label:'对冲基金敞口%',data:hfExp,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5,yAxisID:'y1'},
-{label:'SOXL AUM($B)',data:soxlAUM,borderColor:'#f85149',tension:0.4,pointRadius:0,borderWidth:1.5,borderDash:[5,3],yAxisID:'y1'}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false}},y:{position:'left',ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'SOX÷100',color:'#8b949e',font:{size:8}}},y1:{position:'right',min:0,max:28,ticks:{color:'#8b949e',font:{size:8},stepSize:4},grid:{display:false},title:{display:true,text:'% / $B',color:'#8b949e',font:{size:8}}}}}});
-
-})();
-
-(function(){ /* software-flow-chart.html */
-var ctx=document.getElementById("software_cv").getContext("2d");
-
-var labels=["5/1","5/8","5/15","5/22","5/29","6/5","6/12","6/18","6/22","6/26","7/1","7/8","7/14","7/17","7/21","7/23","7/25","7/28","7/29","7/30","7/31"];
-var soft=[100,103,108,110,112,114,116,118,120,117,118,122,126,128,129,130,127,124,120,128,132];
-var mag7=[100,102,106,110,113,115,116,117,118,112,113,110,108,106,104,102,100,97,94,103,110];
-var semi=[100,110,123,131,136,140,143,146,148,130,133,130,120,115,118,114,108,95,90,105,112];
-new Chart(ctx,{type:'line',data:{labels:labels,datasets:[
-{label:'软件IGV',data:soft,borderColor:'#3fb950',backgroundColor:'rgba(63,185,80,0.1)',fill:true,tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'},
-{label:'Mag7加权',data:mag7,borderColor:'#a371f7',tension:0.4,pointRadius:1.5,borderWidth:2.5,borderDash:[5,3],yAxisID:'y'},
-{label:'半导体SOXX',data:semi,borderColor:'#58a6ff',backgroundColor:'rgba(88,166,255,0.06)',fill:true,tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'}}}}});
-
-})();
-
-(function(){ /* sox-flow-chart.html */
-var ctx=document.getElementById("sox_flow_cv").getContext("2d");
-
-var labels=["5/1","5/8","5/15","5/22","5/29","6/5","6/12","6/19","6/22","6/26","7/1","7/3","7/8","7/10","7/14","7/17","7/21","7/23","7/25","7/28","7/29","7/30","7/31"];
-var weekly=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
-var cumul=[15,33,55,75,100,128,148,163,158,148,140,128,182,197,207,212,220,232,204,189,169,207,249];
-var inflow=weekly.map(function(v){return v>0?v:0});
-var outflow=weekly.map(function(v){return v<0?v:0});
-new Chart(ctx,{type:'bar',data:{labels:labels,datasets:[
-{label:'流入($亿)',data:inflow,backgroundColor:'rgba(63,185,80,0.7)',borderColor:'#3fb950',borderWidth:1,borderRadius:2,stack:'flow'},
-{label:'流出($亿)',data:outflow,backgroundColor:'rgba(248,81,73,0.7)',borderColor:'#f85149',borderWidth:1,borderRadius:2,stack:'flow'},
-{label:'累计($亿)',data:cumul,borderColor:'#d2991d',tension:0.4,pointRadius:2,borderWidth:2.5,type:'line',yAxisID:'y1'}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{stacked:true,ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false}},y:{stacked:true,position:'left',ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+'$'+v+'亿'}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'周度流量',color:'#8b949e',font:{size:8}}},y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){return'$'+v+'亿'}},grid:{display:false},title:{display:true,text:'累计',color:'#d2991d',font:{size:8}}}}}});
-
-})();
-
-(function(){ /* mag7-flow-chart.html */
-var ctx=document.getElementById("mag7_cv").getContext("2d");
-
-var labels=["1月","2月","3月上","3月下","4月","5月上","5月下","6月上","6月中","6月下","7月上","7/8-14","7/15-21","7/22-24","7/25-28","7/29","7/30-31"];
-var weekly=[-8,-15,5,12,18,22,25,30,25,-10,-20,-15,-12,-30,-25,-35,42];
-var cumul=[-8,-23,-18,-6,12,34,59,89,114,104,84,69,57,27,2,-33,9];
-var inflow=weekly.map(function(v){return v>0?v:0});
-var outflow=weekly.map(function(v){return v<0?v:0});
-new Chart(ctx,{type:'bar',data:{labels:labels,datasets:[
-{label:'流入($亿)',data:inflow,backgroundColor:'rgba(63,185,80,0.7)',borderColor:'#3fb950',borderWidth:1,borderRadius:2,stack:'flow'},
-{label:'流出($亿)',data:outflow,backgroundColor:'rgba(248,81,73,0.7)',borderColor:'#f85149',borderWidth:1,borderRadius:2,stack:'flow'},
-{label:'累计($亿)',data:cumul,borderColor:'#d2991d',tension:0.4,pointRadius:2,borderWidth:2.5,type:'line',yAxisID:'y1'}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:8},usePointStyle:true,padding:12}}},scales:{x:{stacked:true,ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{stacked:true,position:'left',ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+'$'+v+'亿'}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'周度流量',color:'#8b949e',font:{size:8}}},y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){return(v>=0?'+':'')+'$'+v+'亿'}},grid:{display:false},title:{display:true,text:'累计($亿)',color:'#d2991d',font:{size:8}}}}}});
-
-})();
-
-(function(){ /* putcall-chart.html */
-var ctx=document.getElementById("putcall_cv").getContext("2d");
-
-var labels=["1月","2月初","2月中","3月","3月下","4月","4月下","5月上","5月下","6月初","6月中","6月下","7月初","7月中","7/22","7/25","7/28","7/29","7/30","7/31"];
-var pc=[0.82,0.88,0.95,0.78,0.72,0.68,0.62,0.55,0.58,0.52,0.60,0.85,1.05,1.15,1.22,1.30,1.38,1.42,1.10,0.85];
-new Chart(ctx,{type:'line',data:{labels:labels,datasets:[
-{label:'Put/Call比率',data:pc,borderColor:'#a371f7',backgroundColor:'rgba(163,113,247,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{min:0.3,max:1.8,ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'P/C比率',color:'#8b949e',font:{size:8}}}}}});
-
-})();
-
-(function(){ /* hyg-chart.html */
-var ctx=document.getElementById("hyg_cv").getContext("2d");
-
-var labels=["1月","2月","3月","4月","5月上","5月下","6月初","6月中","6月下","7月初","7/8","7/14","7/18","7/22","7/25","7/28","7/29","7/30","7/31"];
-var hyg=[77.2,77.0,77.5,78.0,78.3,78.5,78.8,78.6,78.2,77.8,77.2,76.5,76.0,75.5,75.0,74.2,73.8,74.5,74.5];
-new Chart(ctx,{type:'line',data:{labels:labels,datasets:[
-{label:'HYG高收益债($)',data:hyg,borderColor:'#d2991d',backgroundColor:'rgba(210,153,29,0.08)',fill:true,tension:0.4,pointRadius:2,borderWidth:2.5}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{ticks:{color:'#8b949e',font:{size:8}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'HYG $',color:'#8b949e',font:{size:8}}}}}});
-
-})();
-
-(function(){ /* kol-pnl-chart.html */
-var ctx=document.getElementById("kol_cv").getContext("2d");
-
-var labels=["1月","2月","3月","4月","5月","6月初","6/15","6/22","6/28","7/5","7/12","7/18","7/22","7/25","7/28","7/29","7/30","7/31"];
-var sa=[30,85,180,320,410,439,380,300,220,150,80,30,-10,-50,-85,-100,-80,-55];
-var long=[15,45,100,180,230,260,240,220,180,150,100,50,20,-10,-30,-45,-20,5];
-var lever=[10,35,80,150,180,200,170,120,50,10,-30,-60,-75,-85,-95,-98,-75,-50];
-var burry=[0,3,0,-2,5,3,8,12,18,22,25,30,28,32,35,38,30,35];
-new Chart(ctx,{type:'line',data:{labels:labels,datasets:[
-{label:'Situational Awareness',data:sa,borderColor:'#f85149',tension:0.4,pointRadius:1.5,borderWidth:2.5},
-{label:'存储多头(平均)',data:long,borderColor:'#3fb950',tension:0.4,pointRadius:1.5,borderWidth:2.5},
-{label:'杠杆ETF党(平均)',data:lever,borderColor:'#d2991d',tension:0.4,pointRadius:1.5,borderWidth:2,borderDash:[5,3]},
-{label:'Burry空头',data:burry,borderColor:'#a371f7',tension:0.4,pointRadius:1.5,borderWidth:2.5}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:'#8b949e',font:{size:8},usePointStyle:true,padding:12}}},scales:{x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+v+'%'}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'累计盈亏%',color:'#8b949e',font:{size:8}}}}}});
-
-})();
-})();
-</script>
-
-<script>
-(function(){
-if(typeof Chart==="undefined")return;
-
-// XHS chart
-(function(){
-var ctx=document.getElementById("xhs_cv").getContext("2d");
-var labels=["5/1","5/15","6/1","6/10","6/15","6/20","6/22","6/25","6/28","7/1","7/5","7/10","7/13","7/17","7/20","7/22","7/24","7/27","7/28","7/29","7/30","7/31"];
-var profit=[45,55,65,72,78,82,85,80,72,60,48,35,28,22,18,15,10,12,15,18,22,25];
-var loss=[55,45,35,28,22,18,15,20,28,40,52,65,72,78,82,85,90,88,85,82,78,75];
-new Chart(ctx,{type:"line",data:{labels:labels,datasets:[
-{label:"晒收益帖(%)",data:profit,borderColor:"#f85149",backgroundColor:"rgba(248,81,73,0.1)",fill:true,tension:0.4,pointRadius:2,borderWidth:2.5},
-{label:"晒亏损帖(%)",data:loss,borderColor:"#3fb950",backgroundColor:"rgba(63,185,80,0.08)",fill:true,tension:0.4,pointRadius:2,borderWidth:2.5}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:"#8b949e",font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:"#8b949e",font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{ticks:{color:"#8b949e",font:{size:8},callback:function(v){return v+"%"}},grid:{color:"rgba(48,54,61,0.25)"},min:0,max:100}}}});
-})();
-
-// Yield chart
-(function(){
-var ctx=document.getElementById("yield_cv").getContext("2d");
-var labels=["24/7","24/9","24/11","25/1","25/3","25/5","25/7","25/9","25/11","26/1","26/2","26/3","26/4","26/5","26/6","26/7","8/1"];
-var spread=[-35,-42,-28,-20,-38,-55,-60,-48,-32,-60,-35,-15,-8,-22,-45,-38,-28];
-new Chart(ctx,{type:"line",data:{labels:labels,datasets:[
-{label:"2Y/10Y利差(bp)",data:spread,borderColor:"#d2991d",backgroundColor:"rgba(210,153,29,0.1)",fill:true,tension:0.4,pointRadius:2,borderWidth:2.5}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:"#8b949e",font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{ticks:{color:"#8b949e",font:{size:7},maxTicksLimit:12},grid:{display:false}},y:{ticks:{color:"#8b949e",font:{size:8},callback:function(v){return(v>=0?"+":"")+v+"bp"}},grid:{color:"rgba(48,54,61,0.25)"}}}}});
-})();
-
-// Inflow chart
-(function(){
-var ctx=document.getElementById("inflow_cv").getContext("2d");
-var labels=["5/1","5/8","5/15","5/22","5/29","6/5","6/12","6/19","6/22","6/26","7/1","7/3","7/8","7/10","7/14","7/17","7/21","7/23","7/25","7/28","7/29","7/30","7/31"];
-var etfIn=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
-var krForeign=[3,5,8,6,4,2,-5,-10,-15,-20,-25,-30,-5,0,8,3,6,2,-18,-35,-40,5,60];
-var cumul=[0];for(var i=0;i<etfIn.length;i++)cumul.push(cumul[i]+etfIn[i]+krForeign[i]);cumul.shift();
-new Chart(ctx,{type:"bar",data:{labels:labels,datasets:[
-{label:"ETF流入($亿)",data:etfIn,backgroundColor:function(c){return etfIn[c.dataIndex]>=0?"rgba(88,166,255,0.7)":"rgba(248,81,73,0.7)"},borderRadius:2,stack:"s1"},
-{label:"韩国外资($亿)",data:krForeign,backgroundColor:function(c){return krForeign[c.dataIndex]>=0?"rgba(63,185,80,0.6)":"rgba(200,80,80,0.6)"},borderRadius:2,stack:"s1"},
-{label:"累计($亿)",data:cumul,borderColor:"#d2991d",tension:0.4,pointRadius:2,borderWidth:2.5,type:"line",yAxisID:"y1"}
-]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},plugins:{legend:{labels:{color:"#8b949e",font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{stacked:true,ticks:{color:"#8b949e",font:{size:8},maxTicksLimit:14},grid:{display:false}},y:{stacked:true,ticks:{color:"#8b949e",font:{size:8},callback:function(v){return(v>=0?"+":"")+"$"+v+"亿"}},grid:{color:"rgba(48,54,61,0.25)"}},y1:{position:"right",ticks:{color:"#d2991d",font:{size:8},callback:function(v){return"$"+v+"亿"}},grid:{display:false}}}}});
-})();
-
-})();
-</script>
+</body>
 
 </body>
-</html>
+</html<tbody><!-- KOREA_ROWS -->
+<tr><td style="font-size:10px;white-space:nowrap">1</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">0억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">0억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">2</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/3</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+25,993억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-18,075억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,425,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/6</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-13,693억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-649억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,343,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/7</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-524억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-11,930억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,201,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/8</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-5,924억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+1,833억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,076,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/9</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+8,839억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-4,579억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,186,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/10</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+4,451억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-16,761억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,180,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/13</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-14,423억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-13,001억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,845,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/14</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+13,346억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+12,713억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,913,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/15</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+5,537억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+6,894억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">2,082,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/16</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-11,582억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-8,651억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,842,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/20</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-9,297억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+5,849억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,764,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/21</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+6,723억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-4,359억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,836,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/22</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-10,339억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+11,720억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,830,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/23</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-2,843억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+13,235억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,919,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/24</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-8,511억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-17,182억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,759,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/27</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+4,197억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-11,185억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,816,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/28</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+6,024억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-28,308억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,550,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/29</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+11,087억</td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-12,915억</td><td class="neutral" style="font-size:11px;text-align:right;white-space:nowrap">1,401,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/30</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="down" style="font-size:11px;text-align:right;white-space:nowrap">-1,060억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+5,876억</td><td class="neutral" style="font-size:11px;text-align:right;white-space:nowrap">1,322,000</td></tr>
+<tr><td style="font-size:10px;white-space:nowrap">7/31</td><td style="font-size:10px;color:#8b949e;white-space:nowrap"></td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+4,762억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">+37,895억</td><td class="up" style="font-size:11px;text-align:right;white-space:nowrap">1,718,000</td></tr>
+<!-- /KOREA_ROWS --></tbody>PE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
