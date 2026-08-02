@@ -28,9 +28,67 @@
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
+var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22", "6/26", "7/1", "7/3", "7/8", "7/10", "7/14", "7/17", "7/21", "7/23", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
+.grid2{display:grid;grid-template-columns:1fr 170px;gap:8px;height:100%}
+.panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
+.panel .sig{padding:5px 7px;margin:2px 0;border-radius:4px;font-size:10px}
+.sig-r{background:rgba(248,81,73,0.12);border-left:3px solid #f85149}
+.sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
+@media(max-width:480px){.grid2{grid-template-columns:1fr}}
+</style></head><body>
+<div class="grid2">
+<div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
+<div class="panel">
+<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">流入🟢 vs 流出🔴</div>
+<div class="sig sig-g"><b>5月 机构疯狂涌入</b><br>周均净流入+$20亿<br>5/8单周+$22亿</div>
+<div class="sig sig-r"><b>6/22-26 首次周流出</b><br>−$5亿 主动基金开始减仓</div>
+<div class="sig sig-r"><b>7/3 加速流出</b><br>−$10亿 EPFR科技−$93亿<br>对冲基金连卖4周</div>
+<div class="sig sig-g"><b>7/8 史上最大流入!</b><br>+$54亿单周(养老金定投)<br>暴跌中逆势接盘</div>
+<div class="sig sig-r"><b>7/24 恐慌流出</b><br>−$28亿 全球半导体恐慌<br>KOSPI连续熔断</div>
+<div class="sig sig-g"><b>7/30-31 暴力回补</b><br>+$38亿/+$42亿<br>主动基金重返</div>
+<div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
+流入: <span style="color:#3fb950">15周 $246亿</span><br>
+流出: <span style="color:#f85149">8周 −$66亿</span><br>
+净: <span style="color:#58a6ff">+$180亿</span>
+</div>
+</div>
+</div>
+<script>
+setTimeout(function(){
+var ctx=document.getElementById('c').getContext('2d');
+var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22", "6/26", "7/1", "7/3", "7/8", "7/10", "7/14", "7/17", "7/21", "7/23", "7/25", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
+.grid2{display:grid;grid-template-columns:1fr 170px;gap:8px;height:100%}
+.panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
+.panel .sig{padding:5px 7px;margin:2px 0;border-radius:4px;font-size:10px}
+.sig-r{background:rgba(248,81,73,0.12);border-left:3px solid #f85149}
+.sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
+@media(max-width:480px){.grid2{grid-template-columns:1fr}}
+</style></head><body>
+<div class="grid2">
+<div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
+<div class="panel">
+<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">流入🟢 vs 流出🔴</div>
+<div class="sig sig-g"><b>5月 机构疯狂涌入</b><br>周均净流入+$20亿<br>5/8单周+$22亿</div>
+<div class="sig sig-r"><b>6/22-26 首次周流出</b><br>−$5亿 主动基金开始减仓</div>
+<div class="sig sig-r"><b>7/3 加速流出</b><br>−$10亿 EPFR科技−$93亿<br>对冲基金连卖4周</div>
+<div class="sig sig-g"><b>7/8 史上最大流入!</b><br>+$54亿单周(养老金定投)<br>暴跌中逆势接盘</div>
+<div class="sig sig-r"><b>7/24 恐慌流出</b><br>−$28亿 全球半导体恐慌<br>KOSPI连续熔断</div>
+<div class="sig sig-g"><b>7/30-31 暴力回补</b><br>+$38亿/+$42亿<br>主动基金重返</div>
+<div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
+流入: <span style="color:#3fb950">15周 $246亿</span><br>
+流出: <span style="color:#f85149">8周 −$66亿</span><br>
+净: <span style="color:#58a6ff">+$180亿</span>
+</div>
+</div>
+</div>
+<script>
+setTimeout(function(){
+var ctx=document.getElementById('c').getContext('2d');
 var labels=["5/1", "5/8", "5/15", "5/22", "5/29", "6/5", "6/12", "6/19", "6/22", "6/26", "7/1", "7/3", "7/8", "7/10", "7/14", "7/17", "7/21", "7/23", "7/25", "7/28", "7/29", "7/30", "7/31"]
-var weekly=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
-var cumul=[15,33,55,75,100,128,148,163,158,148,140,128,182,197,207,212,220,232,204,189,169,207,249];
 var inflow=weekly.map(function(v){{return v>0?v:0}});
 var outflow=weekly.map(function(v){{return v<0?v:0}});
 
