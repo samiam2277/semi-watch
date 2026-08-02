@@ -1,18 +1,28 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script src="chart.umd.min.js"></script>
-<style>body{background:#161b22;color:#c9d1d9;font-family:sans-serif;padding:20px}</style>
-</head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
-<h2>Chart.js 加载测试</h2>
-<div id="status" style="color:yellow;margin:10px 0">⏳ 检测中...</div>
-<canvas id="c" style="max-width:600px;height:300px"></canvas>
+<style>body{background:#0d1117;color:#c9d1d9;font-family:sans-serif;padding:20px}
+#status{font-size:14px;margin:10px 0;padding:10px;border-radius:4px}
+#c{max-width:600px;height:300px;background:#161b22;border:1px solid #30363d;border-radius:4px}
+</style></head><body>
+<div id="status">⏳ 1/3 页面加载成功...</div>
+<canvas id="c"></canvas>
 <script>
-(function check(){
-  if(typeof Chart==='undefined'){document.getElementById('status').textContent='❌ Chart.js 未加载！';return;}
-  document.getElementById('status').textContent='✅ Chart.js 已加载，渲染中...';
+var s=document.getElementById('status');
+s.textContent='✅ 2/3 JS执行成功。尝试加载Chart.js...';
+s.style.background='#1a3a1a';
+
+var script=document.createElement('script');
+script.src='chart.umd.min.js';
+script.onload=function(){
+  s.textContent='✅ 3/3 Chart.js加载成功，渲染中...';
+  s.style.background='#1a4a1a';
   var ctx=document.getElementById('c').getContext('2d');
-  if(!ctx){document.getElementById('status').textContent='❌ Canvas 2D 不支持！';return;}
-  try{new Chart(ctx,{type:'bar',data:{labels:['A','B','C'],datasets:[{label:'Test',data:[1,2,3],backgroundColor:'#58a6ff'}]}});
-  document.getElementById('status').textContent='✅ 图表渲染成功！';
-})();
+  new Chart(ctx,{type:'bar',data:{labels:['A','B','C'],datasets:[{label:'Test',data:[1,2,3],backgroundColor:'#58a6ff'}]}});
+  s.textContent='✅✅✅ 全部成功！图表应已显示';
+};
+script.onerror=function(){
+  s.textContent='❌ Chart.js加载失败！文件不存在或路径错误';
+  s.style.background='#3a1a1a';
+};
+document.head.appendChild(script);
 </script>
 </body></html>
