@@ -1,66 +1,26 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
+<style>body{background:#161b22;color:#c9d1d9;font-family:sans-serif;margin:0;padding:8px}</style></head><body>
+<canvas id="c" style="width:100%;height:260px"></canvas>
 <script>
-(function(){
-  var s=document.createElement('script');
-  s.src='chart.umd.min.js';
-  s.onload=function(){ window._chartReady=true; };
-  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
-  document.head.appendChild(s);
-})();
-</script>
-<style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
-.grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
-.panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
-.panel .sig{padding:5px 7px;margin:2px 0;border-radius:4px;font-size:10px}
-.sig-r{background:rgba(248,81,73,0.12);border-left:3px solid #f85149}
-.sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
-@media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div><div id="err" style="display:none;color:red;padding:10px;font-size:11px;background:#300;border-radius:4px;margin:4px"></div>
-<div class="grid2">
-<div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
-<div class="panel">
-<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">💰 增量资金解读</div>
-<div class="sig sig-g"><b>5月 疯狂涌入</b><br>ETF周均+$20亿<br>外资韩股同步买入</div>
-<div class="sig sig-r"><b>6月下-7月 急剧萎缩</b><br>对冲基金平仓80%<br>外资韩股创纪录卖出</div>
-<div class="sig sig-g"><b>7/8 唯一脉冲</b><br>SOXX单日+$54亿<br>养老金定投抄底</div>
-<div class="sig sig-g"><b>7/30-31 回暖</b><br>周度转正+$80亿<br>主动基金试探回场</div>
-<div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
-累计: <span style="color:#3fb950">+$246亿</span>(5-7月)<br>
-当前: <span style="color:#d2991d">回暖初期 待确认</span>
-</div>
-</div>
-</div>
-<script>
-function initChart(){
-  var err=document.getElementById('err');
-  try{
-    if(typeof Chart==='undefined'){setTimeout(initChart,200);return;}
-    var c=document.getElementById('c');
-    if(!c){err.style.display='block';err.textContent='Canvas #c 未找到';return;}
-    var ctx=c.getContext('2d');
-    if(!ctx){err.style.display='block';err.textContent='Canvas 2D 不支持';return;}
-var ctx=document.getElementById('c').getContext('2d');
+var sc=document.createElement('script');sc.src='chart.umd.min.js';
+sc.onload=function(){
 var labels=['5/1','5/8','5/15','5/22','5/29','6/5','6/12','6/19','6/22','6/26','7/1','7/3','7/8','7/10','7/14','7/17','7/21','7/23','7/25','7/28','7/29','7/30','7/31'];
 var etfIn=[15,18,22,20,25,28,20,15,-5,-10,-8,-12,54,15,10,5,8,12,-28,-15,-20,38,42];
 var krForeign=[3,5,8,6,4,2,-5,-10,-15,-20,-25,-30,-5,0,8,3,6,2,-18,-35,-40,5,60];
-var total=etfIn.map(function(v,i){return v+(krForeign[i]||0)});
-var cumul=[0]; for(var i=0;i<total.length;i++) cumul.push(cumul[i]+total[i]); cumul.shift();
-
-try{try{new Chart(ctx,{type:'bar',
-  data:{labels:labels,datasets:[
-    {label:'ETF流入(亿$)',data:etfIn,backgroundColor:function(ctx){return etfIn[ctx.dataIndex]>=0?'rgba(88,166,255,0.7)':'rgba(248,81,73,0.7)'},borderRadius:2,stack:'stack1'},
-    {label:'韩国外资(亿$)',data:krForeign,backgroundColor:function(ctx){return krForeign[ctx.dataIndex]>=0?'rgba(63,185,80,0.6)':'rgba(200,80,80,0.6)'},borderRadius:2,stack:'stack1'},
-    {label:'累计净流入(亿$)',data:cumul,borderColor:'#d2991d',tension:0.4,pointRadius:2,borderWidth:2.5,type:'line',yAxisID:'y1'}
-  ]},
-  options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
-    plugins:{legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14}}},
-    scales:{
-      x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false},stacked:true},
-      y:{stacked:true,ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+'$'+v+'亿'}},grid:{color:'rgba(48,54,61,0.25)'},title:{display:true,text:'周度流量',color:'#8b949e',font:{size:8}}},
-      y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){return'$'+v+'亿'}},grid:{display:false},title:{display:true,text:'累计',color:'#d2991d',font:{size:8}}}
-    }
-  }
-});
-  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}  err.style.display='none';}catch(e){err.style.display='block';err.textContent='JS错误: '+e.message;}})();
+var cumul=[0];for(var i=0;i<etfIn.length;i++)cumul.push(cumul[i]+etfIn[i]+krForeign[i]);cumul.shift();
+var ctx=document.getElementById('c').getContext('2d');
+new Chart(ctx,{type:'bar',data:{labels:labels,datasets:[
+  {label:'ETF流入($亿)',data:etfIn,backgroundColor:function(c){return etfIn[c.dataIndex]>=0?'rgba(88,166,255,0.7)':'rgba(248,81,73,0.7)'},borderRadius:2,stack:'s1'},
+  {label:'韩国外资($亿)',data:krForeign,backgroundColor:function(c){return krForeign[c.dataIndex]>=0?'rgba(63,185,80,0.6)':'rgba(200,80,80,0.6)'},borderRadius:2,stack:'s1'},
+  {label:'累计($亿)',data:cumul,borderColor:'#d2991d',tension:0.4,pointRadius:2,borderWidth:2.5,type:'line',yAxisID:'y1'}
+]},options:{responsive:true,maintainAspectRatio:false,
+  plugins:{legend:{labels:{color:'#8b949e',font:{size:9}}}},
+  scales:{x:{stacked:true,ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:14},grid:{display:false}},
+  y:{stacked:true,ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+'$'+v+'亿'}},grid:{color:'rgba(48,54,61,0.25)'}},
+  y1:{position:'right',ticks:{color:'#d2991d',font:{size:8},callback:function(v){return'$'+v+'亿'}},grid:{display:false}}}
+}});
+};
+sc.onerror=function(){document.body.innerHTML+='<div style=color:red>chart.umd.min.js 404</div>';};
+document.head.appendChild(sc);
 </script>
 </body></html>
