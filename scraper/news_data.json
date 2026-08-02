@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-02T21:49:58.931088",
-  "total": 116,
-  "bullish": 24,
-  "bearish": 25,
-  "neutral": 67,
-  "bias": -0.01,
+  "generated_at": "2026-08-02T22:20:12.058067",
+  "total": 119,
+  "bullish": 25,
+  "bearish": 24,
+  "neutral": 70,
+  "bias": 0.01,
   "articles": [
     {
-      "title": "SK Hynix's Profits Explode 550%, but Its $31 Billion Spending Plan Sends Investors Running - 24/7 Wall St.",
+      "title": "SK Hynix's Profits Explode 550%, but Its $31 Billion Spending Plan Sends Investors Running - 247wallst.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWlZIaUZOdHA5azlYZy1ob3p0M3dDTk5Qck95R0xyLVRmVlJYbzN6U0N3OXRGTGI2OE1xV0J0U0FIMkVjQTFkbHhZd0VCTnZ0LUU4SXB4UFpkSzZVRkQwR193QUd2QzN2UUlJOHhkdFo0MXVkVm9udUtDR3kxVDB1WWl4N3VySDR3V0VObTFPeV81RVVyb244MUo3U2ZmQ3U2djhlN1c5YjVmaHJjcnRRWk1kMXZoS2RlOGVkZXk3MVpQeW1jYVFJd0RR?oc=5",
       "time": "Wed, 29 Jul 2026 19:05:55",
@@ -21,7 +21,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "SanDisk Sinks 7%, Micron Slides 6% as Memory Selloff Intensifies; Seagate Bucks the Trend - 24/7 Wall St.",
+      "title": "SanDisk Sinks 7%, Micron Slides 6% as Memory Selloff Intensifies; Seagate Bucks the Trend - 247wallst.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeU84QjZlZTVGRU9jbFNfaTBaQTFTQmNsOGlkOGh0VzMyaVljVmZQVU1RSGV0TVRjS2JwTndhQ2JKM0F5ekc1VzFjUm00N1lDNkFrR3pZZlpIVF8zUmZGNVZnWFU0a0RoOUxBX2Y0UFFDcGloc0s5d2VQYkF5RXZ4anJ6LW9XV19VSjZFbjlNRUhXck81NkJZdlNXNHExY0VjckVhTFh4b1o3YmxvNnpBYnNNaUdYU1JzYUN4dnQ5VWJOMUNXOS13dg?oc=5",
       "time": "Wed, 29 Jul 2026 15:50:15",
@@ -196,6 +196,13 @@
       "sentiment": "bull"
     },
     {
+      "title": "22:16:53【美股AI硬件板块跌幅继续扩大 美光、AMD、闪迪等多股跌超10%】 - 财联社",
+      "source": "财联社",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5BdGZKWEd2N0lVNGo0R1JnbHpFbUxTbVVhVWRfcGlBVGsxZnliZmNwVVdOMmFKUGNIb2hUc0drd2RvLWxVN0ZEaQ?oc=5",
+      "time": "Tue, 28 Jul 2026 14:16:53",
+      "sentiment": "neutral"
+    },
+    {
       "title": "AI泡沫的金丝雀，刚刚死去..... - 华尔街见闻",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBoVWgtRGxEb3pUYU4weVY2NUxFUXcyaVN6Mnk4ODg0THFVYWhPRU4tZm1WaFhQMV9uRlJhVGNUT1NjU2RrblBTTXhJbVNtTk1tSTY0?oc=5",
@@ -294,6 +301,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "SK Hynix Rockets 14% Ahead of July 29 Earnings as Chip Stocks Rebound - AOL.com",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmNTIxbk45UkZ6QVpWNm4xY2dUT0xCeVpOQWE1bHZFRV80SjhYVzlTTnIzYTRFOUhpSGJiNGhVczdFZm11alNfV2VVcnFoOEFaNi1tb1lMbFlCMnMzV3A0dDBIeXRxd1ZYUW0yMHlOc3E3MzRycmV3Sw?oc=5",
+      "time": "Tue, 21 Jul 2026 18:27:01",
+      "sentiment": "bull"
+    },
+    {
       "title": "SanDisk Rises 8%, Western Digital Jumps 9%, Micron Adds 7% as Memory Rebound Accelerates - AOL.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUGJ5YUhSYS1tTXMtSXNpbTgzSXRpdFZOOVZmenJuakVrVlA1T0tuZ3NjdVVCd3dQbkhkMEV0N0szVzd6ZVM2TS0yWDlMYlF3bXhxRGtaUVdSX1I4ZFBWTUlZTDlrUy1EQ0hud09yVnJxS2JBd2FrcDV0X1IyVWotcQ?oc=5",
@@ -329,31 +343,17 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Up 174% Year-to-Date: 1 Major Reason to Hold Off on Micron Technology Stock at $950 - 24/7 Wall St.",
+      "title": "Up 174% Year-to-Date: 1 Major Reason to Hold Off on Micron Technology Stock at $950 - 247wallst.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2ZRTEE3bnh2OXgxNldUeGE3aUtITENMQnFrdENJMTJpaWpvRDUwQWpkeEdWNk5BUzhIS0syUE5xd050Y2VkMW91Qzk3T0d5SmRCTGNiQlk2WFV1c1poWnBrUEliWWFYcFkwVmQ5N2MzdnpGTWlkamFhQnBzckJOX3NEUFlMeEFCM3BZY2gxdC1IUGVDa3JXek5HVHg2eE9CUnpKYnpYaGxQX25nQVMwSnBKNkQ4Yk5XREVQb2w5RHJ5UQ?oc=5",
       "time": "Tue, 09 Jun 2026 07:00:00",
       "sentiment": "neutral"
     },
     {
-      "title": "[마감시황] 코스피 8.18% 급반등···하이닉스 15.9%↑ - 자본시장뉴스",
+      "title": "[마감시황] 코스피 8.18% 급반등···하이닉스 15.9%↑ - jabon.co.kr",
       "source": "Google News KR",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93d29sLVFLaUhTTktGVUx1ckpUbUtRRGlIdkNXaXQtaG1xTXJVQ2k2ZnVNNkZTci0zQkI3YlV4ekRRVEhZcVVCaVlSeGZmWlZvdkhzZFBZQUhOMGozc2VjNUJDQ0Zfanc?oc=5",
       "time": "Tue, 09 Jun 2026 07:00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Micron, Samsung, SK Hynix just dragged memory stocks into a bear market - AOL.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UM18tOV9QX3VZNzNtTk9rMjloVUoyU2g0aDJZQ0RtQmdvUnJ5d05RYi1fZ2s3Ym9WQ1FOblVITHVEQzA3Nm1meG1vV2JFRWx6M0FfWGFsLUp2VHVIakpjQUpKRUUxcXhQLXkwTlh4aGd4TS1RZEJOQUlFZUk?oc=5",
-      "time": "Tue, 07 Jul 2026 16:16:24",
-      "sentiment": "bear"
-    },
-    {
-      "title": "06:40:22【三星电子预计第二季度营业利润同比暴增1810%】 - 财联社",
-      "source": "财联社",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5sa3J6SW9rclhEX3hyck45TFpZTGdhV3IycVNQSmNleTNPWno2RUVuaks4OHBGN1ZmaFV3V2RXNUhiQzBIbU80bA?oc=5",
-      "time": "Tue, 07 Jul 2026 07:00:00",
       "sentiment": "neutral"
     }
   ],
