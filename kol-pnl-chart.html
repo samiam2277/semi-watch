@@ -1,13 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script>
-(function(){
-  var s=document.createElement('script');
-  s.src='chart.umd.min.js';
-  s.onload=function(){ window._chartReady=true; };
-  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
-  document.head.appendChild(s);
-},300);
-</script>
+<script src="chart.umd.min.js"></script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
 .panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
@@ -17,7 +9,7 @@
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
 </style></head><body>
 <div class="grid2">
-<div style="position:relative"><canvas id="c" style="width:100%;height:280px;max-height:280px"></canvas></div>
+<div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
 <div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">KOL P&L 解读</div>
 <div class="sig sig-g"><b>1-6月中 集体暴赚</b><br>半导体KOL平均+200%<br>Situational Awareness +439%</div>
@@ -35,7 +27,11 @@ Burry空头:<span style="color:#3fb950">+35%</span>
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
-var labels=["1\u6708", "2\u6708", "3\u6708", "4\u6708", "5\u6708", "6\u6708\u521d", "6/15", "6/22", "6/28", "7/5", "7/12", "7/18", "7/22", "7/25", "7/28", "7/29", "7/30", "7/31"]
+var labels=['1月','2月','3月','4月','5月','6月初','6/15','6/22','6/28','7/5','7/12','7/18','7/22','7/25','7/28','7/29','7/30','7/31'];
+var sa=[30,85,180,320,410,439,380,300,220,150,80,30,-10,-50,-85,-100,-80,-55];
+var long=[15,45,100,180,230,260,240,220,180,150,100,50,20,-10,-30,-45,-20,5];
+var lever=[10,35,80,150,180,200,170,120,50,10,-30,-60,-75,-85,-95,-98,-75,-50];
+var burry=[0,3,0,-2,5,3,8,12,18,22,25,30,28,32,35,38,30,35];
 
 new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
@@ -44,7 +40,7 @@ new Chart(ctx,{type:'line',
     {label:'杠杆ETF党(平均)',data:lever,borderColor:'#d2991d',tension:0.4,pointRadius:1.5,borderWidth:2,borderDash:[5,3],yAxisID:'y'},
     {label:'Burry空头',data:burry,borderColor:'#a371f7',tension:0.4,pointRadius:1.5,borderWidth:2.5,yAxisID:'y'}
   ]},
-  options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:'index'},
+  options:{responsive:true,maintainAspectRatio:false,
     plugins:{legend:{labels:{color:'#8b949e',font:{size:8},usePointStyle:true,padding:12}}},
     scales:{
       x:{ticks:{color:'#8b949e',font:{size:8},maxTicksLimit:12},grid:{display:false}},

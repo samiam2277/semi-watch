@@ -1,13 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<script>
-(function(){
-  var s=document.createElement('script');
-  s.src='chart.umd.min.js';
-  s.onload=function(){ window._chartReady=true; };
-  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
-  document.head.appendChild(s);
-},300);
-</script>
+<script src="chart.umd.min.js"></script>
 <style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
 .grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
 .panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
@@ -18,7 +10,7 @@
 @media(max-width:480px){.grid2{grid-template-columns:1fr}}
 </style></head><body>
 <div class="grid2">
-<div style="position:relative"><canvas id="c" style="width:100%;height:280px;max-height:280px"></canvas></div>
+<div style="position:relative"><canvas id="c" style="width:100%;height:280px"></canvas></div>
 <div class="panel">
 <div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">📐 杠杆关键节点</div>
 <div class="sig sig-r"><b>5/27</b> 个股杠杆ETF上市<br>AUM从0→₩4.9万亿</div>
@@ -38,47 +30,10 @@ JP摩根:去杠杆<span style="color:#3fb950">90%+</span> | HSBC:<span style="co
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
-var labels=["4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22", "6/24", "6/28", "7/3", "7/8", "7/13", "7/17", "7/20", "7/22", "7/24", "7/28", "7/29", "7/30", "7/31"]!DOCTYPE html><html><head><meta charset="UTF-8">
-<script>
-(function(){
-  var s=document.createElement('script');
-  s.src='chart.umd.min.js';
-  s.onload=function(){ window._chartReady=true; };
-  s.onerror=function(){ document.body.innerHTML+='<div style=color:red>Chart.js加载失败</div>'; };
-  document.head.appendChild(s);
-},300);
-</script>
-<style>body{background:#161b22;color:#c9d1d9;font-family:-apple-system,sans-serif;margin:0;padding:8px}
-.grid2{display:grid;grid-template-columns:1fr 175px;gap:8px;height:100%}
-.panel{font-size:10px;color:#8b949e;overflow-y:auto;max-height:270px}
-.panel .sig{padding:6px 8px;margin:3px 0;border-radius:4px;font-size:10px}
-.sig-r{background:rgba(248,81,73,0.12);border-left:3px solid #f85149}
-.sig-g{background:rgba(63,185,80,0.12);border-left:3px solid #3fb950}
-.sig-y{background:rgba(210,153,29,0.12);border-left:3px solid #d2991d}
-@media(max-width:480px){.grid2{grid-template-columns:1fr}}
-</style></head><body>
-<div class="grid2">
-<div style="position:relative"><canvas id="c" style="width:100%;height:280px;max-height:280px"></canvas></div>
-<div class="panel">
-<div style="font-weight:600;color:#c9d1d9;margin-bottom:8px;font-size:11px">📐 杠杆关键节点</div>
-<div class="sig sig-r"><b>5/27</b> 个股杠杆ETF上市<br>AUM从0→₩4.9万亿</div>
-<div class="sig sig-r"><b>6/22-24</b> 杠杆巅峰<br>信用贷款₩38.6万亿ATH<br>ETF AUM₩15.9万亿</div>
-<div class="sig sig-r"><b>6/23</b> 第一次熔断<br>ETF单日-25%+ 强平潮开始</div>
-<div class="sig sig-y"><b>7/13</b> 第二次熔断<br>120万+账户触及追缴线<br>32-36万已被强平</div>
-<div class="sig sig-y"><b>7/28</b> 连续熔断<br>KOSPI-10.8%<br>信用贷款降至₩32.5万亿</div>
-<div class="sig sig-g"><b>7/31</b> 新规生效<br>保证金₩3千万现金<br>ETF交易量-75%</div>
-<div style="margin-top:6px;font-size:9px;border-top:1px solid #30363d;padding-top:4px">
-ETF AUM: <span style="color:#d2991d">₩15.9万亿→~₩5万亿(-67%)</span><br>
-信用贷款: <span style="color:#f85149">₩38.6万亿→₩32万亿(-17%)</span><br>
-KOSPI: <span style="color:#58a6ff">9,385→5,593(-40%)</span><br>
-JP摩根:去杠杆<span style="color:#3fb950">90%+</span> | HSBC:<span style="color:#f85149">远未完成</span>
-</div>
-</div>
-</div>
-<script>
-setTimeout(function(){
-var ctx=document.getElementById('c').getContext('2d');
-var labels=["4/1", "4/15", "5/1", "5/15", "5/27", "6/5", "6/12", "6/18", "6/22", "6/24", "6/28", "7/3", "7/8", "7/13", "7/17", "7/20", "7/22", "7/24", "7/28", "7/29", "7/30", "7/31"]
+var labels=['4/1','4/15','5/1','5/15','5/27','6/5','6/12','6/18','6/22','6/24','6/28','7/3','7/8','7/13','7/17','7/20','7/22','7/24','7/28','7/29','7/30','7/31'];
+var credit=[30.3,31,32,33,34.2,35.5,36.5,37.5,38.2,38.63,37.8,36.5,35,33.8,33.2,33,32.8,32.67,32.5,32.4,33,32];
+var etfAUM=[0,0,2,3.5,4.9,7.5,10.5,13.5,15,15.93,14.5,12,9.5,9.34,8,7,6.5,5.5,4.8,4.5,5,5];
+var kospi=[7500,8200,8500,8700,9000,9100,9200,9350,9385,9200,8600,8000,7500,6500,6200,6100,6000,6000,5563,5663,5593,6595];
 var kospiS=kospi.map(function(v){{return v/40}});
 new Chart(ctx,{type:'line',
   data:{labels:labels,datasets:[
