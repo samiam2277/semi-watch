@@ -1,18 +1,11 @@
 {
-  "generated_at": "2026-08-03T02:31:28.201645",
-  "total": 116,
-  "bullish": 25,
-  "bearish": 22,
-  "neutral": 69,
-  "bias": 0.03,
+  "generated_at": "2026-08-03T08:34:50.167006",
+  "total": 87,
+  "bullish": 15,
+  "bearish": 17,
+  "neutral": 55,
+  "bias": -0.02,
   "articles": [
-    {
-      "title": "SK Hynix's Profits Explode 550%, but Its $31 Billion Spending Plan Sends Investors Running - 24/7 Wall St.",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWlZIaUZOdHA5azlYZy1ob3p0M3dDTk5Qck95R0xyLVRmVlJYbzN6U0N3OXRGTGI2OE1xV0J0U0FIMkVjQTFkbHhZd0VCTnZ0LUU4SXB4UFpkSzZVRkQwR193QUd2QzN2UUlJOHhkdFo0MXVkVm9udUtDR3kxVDB1WWl4N3VySDR3V0VObTFPeV81RVVyb244MUo3U2ZmQ3U2djhlN1c5YjVmaHJjcnRRWk1kMXZoS2RlOGVkZXk3MVpQeW1jYVFJd0RR?oc=5",
-      "time": "Wed, 29 Jul 2026 19:05:55",
-      "sentiment": "neutral"
-    },
     {
       "title": "千亿ETF神话破灭：SK海力士暴跌，香港“两倍做多”改\"灵活杠杆\"，韩国限制杠杆ETF投资 - 华尔街见闻",
       "source": "华尔街见闻",
@@ -21,25 +14,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "SanDisk Sinks 7%, Micron Slides 6% as Memory Selloff Intensifies; Seagate Bucks the Trend - 24/7 Wall St.",
+      "title": "South Korea $2 trillion stock rout breaks records as SK Hynix results disappoint - Reuters",
       "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeU84QjZlZTVGRU9jbFNfaTBaQTFTQmNsOGlkOGh0VzMyaVljVmZQVU1RSGV0TVRjS2JwTndhQ2JKM0F5ekc1VzFjUm00N1lDNkFrR3pZZlpIVF8zUmZGNVZnWFU0a0RoOUxBX2Y0UFFDcGloc0s5d2VQYkF5RXZ4anJ6LW9XV19VSjZFbjlNRUhXck81NkJZdlNXNHExY0VjckVhTFh4b1o3YmxvNnpBYnNNaUdYU1JzYUN4dnQ5VWJOMUNXOS13dg?oc=5",
-      "time": "Wed, 29 Jul 2026 15:50:15",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNLUY2eUIxTk5FN3ZLbDkzTkhPbjFxNS1fUzFxa0lVZnZoQ1FpcGNBMEt3OFhkdHJFN0JNUlVZOXd2eFNXbkhuNDdJeFY4Rmd1MHFfSnpCYmV3QVRuenlwNGxKXzhpRXZVOFFjMjFkQnpiQWl1amZtRUJ5V0RpQnF0cFdFTEVfUFgtb0ZWM0t6OGdjRHdTMnhLcHVWVzJUU0tieGFhMk40XzJfYTRvSDFTWlVzQzJyTVZ3M2lMS0JB?oc=5",
+      "time": "Wed, 29 Jul 2026 12:56:38",
       "sentiment": "bear"
-    },
-    {
-      "title": "AI memory, chip stocks fall after SK hynix's proft miss despite high demand - Seeking Alpha",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUjBETnU4SFhyRndiWm1iLXlfY210Nmc2ZFZBMWktUjJ4WWtNRTlxWFRGeEtGRV9TX25ZcjNLSDJtUXdFS2JubjRzVGZISklKMkZkYnB4akV0YWdsaTQ3OW9XOVFySi1CUW5MVkJLYVBKX3FpQWJVNUpqN0M1ajVhR0Q1SlZ0c0VLcHZtT2tLaG5Bb1prTFViR1NjQ2FEV2xHdllNMUtnWkFNUG9kOVVRb2loQm84c2FuMC11VUxOaThSWEhRTzZB?oc=5",
-      "time": "Wed, 29 Jul 2026 15:17:00",
-      "sentiment": "bear"
-    },
-    {
-      "title": "KOSPI Triggers Historic Back-to-Back Circuit Breakers as AI Memory Rally Faces Structural Reckoning - Tech Times",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYmNNcDYxSWlhXzhmZlFtRXFpOFlUdVcxclJkUTZUb2NVVS1rUTFLSVFpbVdqcXZaSHByZzd3WGJFZTlzWmRTeDdrNzZHQmprZThXZldjSkNtWHE5VWJkM1o1MDFUbXY1YkZGUkdpSWs2czNrb1E1ZTNidUF2cjhjTEJ5bTZNVTZHNHFaNnRsNFVkamlfb2x4N2JyVzJZSjRDZzVGa0laVlhWcFRCQXF0YllZVUozOFNDSERNelRQSVNoR0psZXY4YW9kc2ZJN0w3Z0Y5MGRrVkFXUVZ3MWJPS2hB?oc=5",
-      "time": "Wed, 29 Jul 2026 11:18:17",
-      "sentiment": "bull"
     },
     {
       "title": "下半年，垂直Agent先下牌桌？ - 华尔街见闻",
@@ -70,25 +49,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "SK Hynix's Record Profit Misses, Igniting a Chip Selloff - Gotrade",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVmEtbm02cHJZY2dzSzBLNVBXOS1FazZYUnpzd3VKVmZlUWlsanUtTVhBQTFuUHEwQV9kMEZpRWVMUVp6MnVWYW1lVVRKX2wxVlVNVndhdDRtMXVhM0xQVl9ibTJEXzRaRm94akk1cmhDRVhNOUhMS1dPZzZVdDRpYzMtRW02MjJNdVE?oc=5",
-      "time": "Wed, 29 Jul 2026 06:57:00",
-      "sentiment": "neutral"
-    },
-    {
       "title": "Why SK Hynix shares crashed despite record Q2 earnings - The Economic Times",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNanM3amdzTkZMTU94M0RuemxWQ1VDMnBVYkp3cV9ZZ2oxMUNfOGowRTBJX2liVEJKZTVydHpzRm53TXVTYmk3RUJqbEZISDlhLU5RMlIxai1UU0RPTDFTaVdJdXZSNV9wMjFSZjlQeFBtMTNTdXl2M0hfeVZKelVMWThMMGZPQ0dwdkxDcDI0OUFVU29HRU1JcmRzRnRHQ2VsaUtKa3lGeTE0Yk1xeU8xT0trNk5tTFVzNUZfX1FoRVRhSF9qSy13ZA?oc=5",
       "time": "Wed, 29 Jul 2026 06:16:03",
       "sentiment": "bull"
-    },
-    {
-      "title": "South Korea stocks plunge 11%, trading halted again as SK Hynix earnings deepen AI chip rout - Firstpost",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTmdQSmRCMkNlUS1ZeElpamd0V1hXYVFYQ3NuMTV2bTBJX01QNkFpcmJUb2tzN0FROEFQWXJTQlRHaV8wSjhsWUNtTGRmYUFud2RxcjZRRml2Uy1mUHllZHI3Ymx3d1BVUkdGU0F6SWNtLS12Sng1dnZjRFJyYWgxaHNnVzFMMGJpZjMyWDRwQjlSTnpDMTJGRlJEWEh4ZWtnejRxbk91ZlFteEhJMFo3b2cyYjlYbk16NDRrZXVybTdUUdIBxwFBVV95cUxNRGJwOGNfbHVjS3E4WVk2M085MFhhbzFJMkdoNmNJS0dxWUlmb1Z5QnFGQjRUM0JUVVJwaFNDanVudVJEd1JKYlpZUzdFVkRzcDM1amdJakVXaldseldWMU4wWU5yX1A4aWE0Wmt4akZuUEtUVUh4aGhMNDhlQXNCWjB0Q3dkTlRRSXg3Tlo5dkZvZ2xOckgxUEJxY2NEMEc1VTdvVmdtbGlIOUI0a2xhaTNLN3RDN3NxYXBDcDRyUTlMX0xvdmVV?oc=5",
-      "time": "Wed, 29 Jul 2026 04:45:57",
-      "sentiment": "bear"
     },
     {
       "title": "\"史上最强\"之后，海力士开始难超预期了 - 华尔街见闻",
@@ -98,32 +63,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "After 'the strongest in history,' SK Hynix is now struggling to surpass expectations. - moomoo.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd2QxVnV4UVViWE9mSFpaV1J1YXlaci1zaUlXM2NDMHMyUVpISzRFeW5EQUZrdnFjUlBoTGUxYlc3OUx3V2ZRQ3F1M3pTNF9ud0tRVnB6N2VjS0RiYlEtejNUSkpabVZCWXZiR2NrRFBIU3lQNUUyOEdDN0dXNzZ5WUU2aFVkQzlUeDRrZFB3akFIQzFxX1VObFRmd1FacGdi?oc=5",
-      "time": "Wed, 29 Jul 2026 04:38:50",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Micron rises after rival SK Hynix posts record sales and profits - Sherwood News",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOX3M2NHcwS3NtSlEybHlzOG5LVDBIbGFwZGpCd2xPQlFFWF9saDZUWExTMUpINW9mNmhrcnFmcVhsZ3N5UUxJS2pXVTltcTdmVEx5ckdVRGVlZmNyNF9GRFFKM01jYmd2TjROOGw4dTJTUVo2aVFkWjd1MUNSaWRNWWJhb1F3dGRWdmtQdEh0WmRTaGJDaVhodEltQ3U?oc=5",
-      "time": "Wed, 28 Jan 2026 08:00:00",
-      "sentiment": "bull"
-    },
-    {
-      "title": "财联社6月24日电，三星电子股价上涨近10%，此前报道称三星可能宣布90万亿韩元的股份回购。 - 财联社",
+      "title": "财联社6月24日电，三星电子股价上涨近10%，此前报道称三星可能宣布90万亿韩元的股份回购。 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9yLXMxUnB3ZTI4RlI4bzZVSWNJM1VxQ0dEYUxXMnloWS1RZmlQamk2V3JXd2k1SnFTd05LbDNhejNIbDhBOWxDZQ?oc=5",
       "time": "Wed, 24 Jun 2026 07:00:00",
       "sentiment": "neutral"
-    },
-    {
-      "title": "SK Hynix posts record first-quarter profit, in line with estimates as memory prices climb - CNBC",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQ0tFSG9ORVR6dy1MMXFOWWxISXVOM3hMdjNxSXpVS1ZNTG9QRGVRdjFqZUQxZ0MwbS0tM1UwbFZUaE1pd19QeVV0ZmNzeVR4RVcyVWVBOTVlZnJoVkFSclEyelFLYzRaTjdjTk9xeVhZaWk2YWYzaG9mV3hSV0ZuM21MdUtLd184SDVSeNIBkgFBVV95cUxNc0F5bGJJNTAwMmZydnp1UUJqR19wUU0tel9RekdyODZhUDY1NFJScXVJWlRXSUNPM09kZzZMX2llM3dHMzdMbi1KSFpsYUhhV3k4cDFCM2RNVFVuTDVEbnZTWEVwdi1obzRTU3p2cjVJZFE3LUdDY01GbV9obXNsSzUwN2VIX18xeDVoMm1GRDREUQ?oc=5",
-      "time": "Wed, 22 Apr 2026 07:00:00",
-      "sentiment": "bull"
     },
     {
       "title": "存储芯片“贫富差距”拉大，赢家输家到底怎么选？ - 华尔街见闻",
@@ -133,25 +77,11 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Billionaire Stanley Druckenmiller Dumped Every Share of Alphabet. He Bought AI Memory Stocks Up 581% to 3,467% Instead - AOL.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPd3A5UXJ4MFBrM3pXLXZ5MjNBTnFhUHNMQ2wybTdxenV0OUxfXzFZUDVBdHY5QUpJWjdJN2VQc3NhZWduck5SdV9DTV9xUHlHQXNiZUJ3SmswX2RuaURmSFVPRzRhc3pZRlk3Snh1azdnbHhtZVRGVEZ3R3lxMzBjYkhBZDc2eUxMUUpYbGdXNU1vcUI0?oc=5",
-      "time": "Wed, 20 May 2026 15:22:12",
-      "sentiment": "neutral"
-    },
-    {
       "title": "CXMT IPO Triggers Memory Chip Rout; Micron Plunges Over 8%, Philly Semi Index Nears Bear Market - finance.biggo.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBLYi1lSmJpdUFRd1l2ZmJKRWQxLWZzVTRhelM0RDJGSjRPQXNHUGJOR0Z5OVI4Uk84ZWlldFZOR3Q4NVJXa1VGWlhJeWNRSFN0VWJWUVhHNlU0NzhTT29hN1VKd3g3ZEh2Vlk4S1RHbnhoWnlEalE?oc=5",
       "time": "Wed, 15 Jul 2026 21:55:00",
       "sentiment": "bear"
-    },
-    {
-      "title": "SK Hynix Margin Tops TSMC as Micron Misses Out on Nvidia Orders, Is the HBM Sector Facing a Shake-Up? - TradingKey",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVGx1X1ZfT0g1cGE2WXo0NmhZdE8wV2dvdE9HeDR2aE1NM2FfV0M2ZnRLby1aeUk0SThGT1NSVG5DU1YyMzFmWmhCc3JYWWh5UFQ2TEpvU0lwRk43blI2NDdOQnQwQkw3bWQtVWNPbXQ3aGVZY2JJRWhrYXJfVldSTDE2X09jekJQMnJQTGlnWE5rN1pscWowai1zZ1kzd21YR2M4d2tKZjQ5RWhhWGc?oc=5",
-      "time": "Wed, 11 Feb 2026 08:00:00",
-      "sentiment": "neutral"
     },
     {
       "title": "South Korea's Kospi enters bear market, plunges 20% from peak. What's spooking investors? - The Economic Times",
@@ -175,7 +105,7 @@
       "sentiment": "neutral"
     },
     {
-      "title": "06:44:59【SK海力士二季度营业利润增长近6倍 不及市场预期】 - 财联社",
+      "title": "06:44:59【SK海力士二季度营业利润增长近6倍 不及市场预期】 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1QRllHR1AxaWtMSU40bkJXZi02TzNMQ2NyTWlNcmF3YmtVbk9kaDVFdkdSYk1TdjUzMFlJbEc5TS02aDdmMG13Wg?oc=5",
       "time": "Tue, 28 Jul 2026 22:44:59",
@@ -217,6 +147,13 @@
       "sentiment": "neutral"
     },
     {
+      "title": "'Black Tuesday': Seoul stocks crash over 10% as chip rout deepens - The Korea Times",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU2x2eEh4V2E3cGs5NTRnRVBoUU90LUU4eG1kREtjZV9EQUg4WDhYRnFjY0I0SVA0V29nVXdYQ29xR3pTeDVmcnl5VWMtN3RUc1AtdG9uNEN4VndfNmlRdmR2LXpPRFM2WnlFRUsxcUxENTFoSFdRT2Y2UmM5V1M4YnBCdFlJQWU4LUpRUWx1anozQlo5UDBfSm8yYW4wOFVFWHl6UnJESk1hN0nSAbABQVVfeXFMTy1lY05xMlVYa0NvdDR0bGdsa2d0d21lTXdxREVYN2RPLW1XSF9kc3BkUzVHaWQzTWFrWWlMbVFFNTN5ZjBBX0dQOFBsUjF2Y1pIbXFxeTVnWXhCbS0xSDItakZuRFZxbmZvY3c2WkRJRFVlaWo5ZGs3VUJmckFaakJjWnJfeDNqdnBhNkRtb002clBHM2VxX0QwTkplRzhKRWtqZEl2ekZMTEhVemxYNGI?oc=5",
+      "time": "Tue, 28 Jul 2026 07:23:03",
+      "sentiment": "bear"
+    },
+    {
       "title": "黑色星期二！全球芯片股遭血洗，SK海力士重挫13%，AI回报成市场最大担心 - 华尔街见闻",
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1WUnVCMTR5eDRFQjZLN2dSeGlRN243blhZaHphVXlTWFEtSzI1V3BxWTg4RzBPUEZSaWs0WmhiV2ZteVNCNGFhVzE1YVJIc2pJSzdv?oc=5",
@@ -238,7 +175,7 @@
       "sentiment": "bear"
     },
     {
-      "title": "日韩股市跳水，韩股又熔断！“存储双雄”暴跌 半导体抛售潮蔓延 - 财联社",
+      "title": "日韩股市跳水，韩股又熔断！“存储双雄”暴跌 半导体抛售潮蔓延 - cls.cn",
       "source": "财联社",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBKMU5sR3dzOHV4ZnR1RUlHNzFrcW51RHc3TnJZSGVCdGFkUTZLeEZ6Q3dSbF94TEp2d0RQSklhb0hGR202SWhpXw?oc=5",
       "time": "Tue, 28 Jul 2026 01:31:36",
@@ -249,13 +186,6 @@
       "source": "华尔街见闻",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UcXphUzU0dzBiM18zejlPWEZNV0hKRmx0OUV1U1RsdFZqOG13RnpSWUFwck9SX3hlaG41S29JXzJPQzBGVmJELU85OGtfWmtDNWJn?oc=5",
       "time": "Tue, 28 Jul 2026 01:02:43",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Micron hits $1 trillion market cap for the first time as stock surges 19% - CNBC",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5mVlRJWWVpZ2FDRlFSblJTbWQ4VXZVaEJUejg1SUxXbjNxa1ZpaHVxN2h1dE1kUC0wbVBFeGFKcjcyT04xWkI0UmU3SDR5M2xmQlBaOHVlTGNMRF9mSGE3WXRRV2VSZWVQSFkzQjc0WnFoLWRPYnI4V9IBfkFVX3lxTE9UZXN2VmU3YWJmZXVvam9xT1BlRlhoLUZfem9oTGlMNGNqME5PSVFaQUJZUGZld0RBZ09qSHM3cklBOFJWS21aU3N3T3hWbDgzbWNmaWtNTzBNR2MyN2FLRklKYnUwVTU1a0hvMUczLUR1VnhtNUgyejZVb0xKdw?oc=5",
-      "time": "Tue, 26 May 2026 07:00:00",
       "sentiment": "neutral"
     },
     {
@@ -294,20 +224,6 @@
       "sentiment": "neutral"
     },
     {
-      "title": "SK Hynix Rockets 14% Ahead of July 29 Earnings as Chip Stocks Rebound - AOL.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBmNTIxbk45UkZ6QVpWNm4xY2dUT0xCeVpOQWE1bHZFRV80SjhYVzlTTnIzYTRFOUhpSGJiNGhVczdFZm11alNfV2VVcnFoOEFaNi1tb1lMbFlCMnMzV3A0dDBIeXRxd1ZYUW0yMHlOc3E3MzRycmV3Sw?oc=5",
-      "time": "Tue, 21 Jul 2026 18:27:01",
-      "sentiment": "bull"
-    },
-    {
-      "title": "SanDisk Rises 8%, Western Digital Jumps 9%, Micron Adds 7% as Memory Rebound Accelerates - AOL.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUGJ5YUhSYS1tTXMtSXNpbTgzSXRpdFZOOVZmenJuakVrVlA1T0tuZ3NjdVVCd3dQbkhkMEV0N0szVzd6ZVM2TS0yWDlMYlF3bXhxRGtaUVdSX1I4ZFBWTUlZTDlrUy1EQ0hud09yVnJxS2JBd2FrcDV0X1IyVWotcQ?oc=5",
-      "time": "Tue, 21 Jul 2026 14:30:07",
-      "sentiment": "bull"
-    },
-    {
       "title": "AI and Semiconductor Stocks Stage Record Rally as Massive Short Covering Explodes — Is This the Real Bottom? - finance.biggo.com",
       "source": "Google News",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1iRVp6ZzRlcnNHdDhzdmJGYS10SmExcmUxWWRnc3ZpMU5hRmk1b0k0eGN6RmpNQlVISy0wZlhaWDF1Nmg4VWlxVXFUV0htaHh3YnFnRXZoVzQ3T0lONnpVMlBZNDJiMTJqS2NJWWhOeGRjbVp6UVE?oc=5",
@@ -322,27 +238,6 @@
       "sentiment": "bear"
     },
     {
-      "title": "DRAM ETF Drops 5% as Memory Trade Cools After Parabolic Run - AOL.com",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9FMkI0eFd4bUpyN3kwSXpQcEtFMGoxOEs5WkVBQy1ZeHdrUWhNdWNqTWZ6djJSSUtXRjBQQlhENGtTOHBjazhaY0paREZzMjU5SXpLdmFpSkpkclloZUpieEstcXYzTWJDRWhaUk1PUk02aVk0RHc?oc=5",
-      "time": "Tue, 12 May 2026 14:13:41",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Prediction: This Artificial Intelligence (AI) Semiconductor Stock Will Go Parabolic in June (Hint: It's Not Nvidia) - The Motley Fool",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeVhHMXB2NXEta2JLd2R1ZFBCeVJvY3NxU1QxVmhZbG9HdmpfLVNXaVJYTFowTHFja3MtenpHdVIyX0padmFwQkUzN2dlMGJObC1uNW9JbVUtcWg3bGlFLTlpQW1GNU5jUGZreWVkX2E4bUR0dWxBTk5oeFpYSm5fbllFSGw3OF83dTRObEdZWjljV1BLWF9HQw?oc=5",
-      "time": "Tue, 09 Jun 2026 07:00:00",
-      "sentiment": "neutral"
-    },
-    {
-      "title": "Up 174% Year-to-Date: 1 Major Reason to Hold Off on Micron Technology Stock at $950 - 24/7 Wall St.",
-      "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2ZRTEE3bnh2OXgxNldUeGE3aUtITENMQnFrdENJMTJpaWpvRDUwQWpkeEdWNk5BUzhIS0syUE5xd050Y2VkMW91Qzk3T0d5SmRCTGNiQlk2WFV1c1poWnBrUEliWWFYcFkwVmQ5N2MzdnpGTWlkamFhQnBzckJOX3NEUFlMeEFCM3BZY2gxdC1IUGVDa3JXek5HVHg2eE9CUnpKYnpYaGxQX25nQVMwSnBKNkQ4Yk5XREVQb2w5RHJ5UQ?oc=5",
-      "time": "Tue, 09 Jun 2026 07:00:00",
-      "sentiment": "neutral"
-    },
-    {
       "title": "[마감시황] 코스피 8.18% 급반등···하이닉스 15.9%↑ - 자본시장뉴스",
       "source": "Google News KR",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE93d29sLVFLaUhTTktGVUx1ckpUbUtRRGlIdkNXaXQtaG1xTXJVQ2k2ZnVNNkZTci0zQkI3YlV4ekRRVEhZcVVCaVlSeGZmWlZvdkhzZFBZQUhOMGozc2VjNUJDQ0Zfanc?oc=5",
@@ -350,11 +245,116 @@
       "sentiment": "neutral"
     },
     {
-      "title": "Micron, Samsung, SK Hynix just dragged memory stocks into a bear market - AOL.com",
+      "title": "06:40:22【三星电子预计第二季度营业利润同比暴增1810%】 - cls.cn",
+      "source": "财联社",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5sa3J6SW9rclhEX3hyck45TFpZTGdhV3IycVNQSmNleTNPWno2RUVuaks4OHBGN1ZmaFV3V2RXNUhiQzBIbU80bA?oc=5",
+      "time": "Tue, 07 Jul 2026 07:00:00",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "HBM，一夜生变 - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iRjUzV0hlMEo0Ykc0Qy1Eb2ZlQkR1T28wcktVcEJfN2U4SUdlMmFKY09KdjV0RG43QVNUMEo3TDZmTTRhZm83eHpCNW1KcndsWTYw?oc=5",
+      "time": "Tue, 06 Aug 2024 07:00:00",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "三星、海力士、美光暴跌，长鑫大涨！知名分析师：存储或有“大洗牌”，有一家大概率出局 - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9QUGo2UzB4Z0IwNTJ2YkxiZ1FoMmJ4MWFuWmlWUjhfOFBPNWx3NjJOX3N1SXN1UUNORkpicWNCbU40ZFppRjRzVHBEc2RUT3Rvb013?oc=5",
+      "time": "Thu, 30 Jul 2026 20:16:45",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "微软Meta财报“修复”AI信仰，芯片指数盘中创4月来最大涨幅，数据中心产业链爆发 - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBvcmFOaVBHSlgwZl8wY0YzQlRGVVZ3ZHpSUl8tR0EwY2M5RlVnS1FUMU9OSDhackw1c3hPR1FHTHBJQmxuNGVCQlhFVDByUTFyTnFv?oc=5",
+      "time": "Thu, 30 Jul 2026 20:00:07",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "三星说供给紧到2028年，但市场有点不信 - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE54V25ZdjNLV1JVaXcyaDBaTUFYaVplaXM4NHRlOVhsRF9BLVlRa2psRlJrMkFULVlFY2N5S3huZ2xCQVRMVlI4Y0VsQVo1SDNqakFv?oc=5",
+      "time": "Thu, 30 Jul 2026 07:44:05",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "三星电话会：存储供不应求“明年比今年更紧张”，60-70%产能分给长期协议，HBM4收入将占六成 - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vY0dMakFnTF9JTGJjV0JIOUVMbGFpdTBxcEhfWFhMbkYtNkVHVDczUW8zUGVhSVgwMmJzY19nNlBqOVJ4ZWIwZkNObjUtZkpnMkc4?oc=5",
+      "time": "Thu, 30 Jul 2026 07:01:17",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "日本组团搞存储，旨在干掉HBM - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBoWUVqOHNBUEdVa090OEVwM2k3NWhDbW56Q3pUZGNRN013Vmc2TEtoc21GQ0o0VXNaMGNQRGo4UWlQWmw5RG5hQlVNUkFURUFlbF9N?oc=5",
+      "time": "Thu, 25 Dec 2025 08:00:00",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "1. 韩媒：三星和SK集团预计将宣布高达2000万亿韩元的投资计划。2. 华为：OceanStor -市场参考 - 金十数据",
+      "source": "金十数据",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hdjE0ZUF5c2F3Q1BfS2JXWGsyaHFDSFg3UTM4WTNNV05lMlZuWXdib0dpN2ZaWkcxRDNHV0tOcFQwT3JUMjZ1ZkxUWlp0WE9vdVhVb0loQ3phOWM?oc=5",
+      "time": "Thu, 23 Jul 2026 11:37:53",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "피델릭스, 반도체 전략적 파트너십 강화에 힘입어 상한가 직행하며 6510원 기록 : 금융 - 재경일보",
+      "source": "Google News KR",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE54TDhUa0dkMnpiWWRFWVUwRmRKVUNNeXZ0NFpITGxGUVJaZUNkMHVSTFFXZnlDS1lvcVc3NEs2cmxYeGtmMV9FdDdR?oc=5",
+      "time": "Thu, 21 May 2026 07:00:00",
+      "sentiment": "bull"
+    },
+    {
+      "title": "Kospi Index Slumps Over 6% at One Point, Samsung Electronics Falls Over 7%, SK Hynix Drops More Than 9%, AI Bubble Fears Partially Erupt - TradingKey",
       "source": "Google News",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UM18tOV9QX3VZNzNtTk9rMjloVUoyU2g0aDJZQ0RtQmdvUnJ5d05RYi1fZ2s3Ym9WQ1FOblVITHVEQzA3Nm1meG1vV2JFRWx6M0FfWGFsLUp2VHVIakpjQUpKRUUxcXhQLXkwTlh4aGd4TS1RZEJOQUlFZUk?oc=5",
-      "time": "Tue, 07 Jul 2026 16:16:24",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNZ1E3aUxlZ2U0WDE1N2dBM0hiaVFpMzBQYVE0eGt1N3o0aW0tRmhZNzVKYkZaVWdicElJekxMTGdmRWlTTFJTRE82WXVXZ2pwbndDQTYtbVlyS3c0VFNxQzVWZXhYN0d1NFppbHpLWHNab2t4QU9aZUh4V29mbWxaTjc1cElzTXZNblN6Q3d6LU9QMDdJdElGaTRnZEMwS1pia1NIMVA3WU96WnJuRGFmaEpZMWRvRGRaZEJ4djUzbjgwYVZ0NXVuQkk4enBMVUFNcGxkYWpSeFN2SzNLTTJ6YW90WkViS24zTDRlN1pMUXdFQW5kaldXeUFn?oc=5",
+      "time": "Thu, 04 Jun 2026 07:00:00",
       "sentiment": "bear"
+    },
+    {
+      "title": "AI Chip Stocks Volatility June 2026: $1.4T Crash & Recovery Analysis - Intellectia AI",
+      "source": "Google News",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12eEkzN1dON0M2WlJEbEwzQkhoaGVaU3U5LUlaem5XSDk4Q09UZlVIYjBjaW9QUnBSZW1kTUsta1RtckYzcGxYVlAyN0JWUDZkTUEyTFdHcmJROWpFSEFrWXZvQnl1RDBlT3ZYVHRkS1Q?oc=5",
+      "time": "Sun, 14 Jun 2026 07:00:00",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "全球存储扩产+海外设备供应告急，国产半导体设备迎“超级时代” - 华尔街见闻",
+      "source": "华尔街见闻",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1YXZVYnRkbmJ5aTNNZG5sZU9qVmhlQVdnejZ4YVlXaURucDFEdmFobzlXT1g4eGVvNUJBS2RwYU1CcUFlNWd0TUZjU0RtUkh2bWRJ?oc=5",
+      "time": "Sun, 12 Jul 2026 07:00:00",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "7월 코스피 22% 폭락…8월 반등 열쇠는 반도체·금리·외국인 수급 - 산경투데이",
+      "source": "Google News KR",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB3amtMWVh0OFhvUDVaeHd0eFFCMF8xMENOYVNoVGRpbGJyMDBnNDJfUnJRdk9mb0pYVzNGTWtGYUQ1QlJnM2F4YlR5SWJUQXcxbU8tbkI4Mk8wT2dKMGYxUXA5T1dyaFBIcHR2NWd5c1bSAXRBVV95cUxNZWI5TjNrNWY0dzllZk5mcV9zU0dxSjZyM1Z6N2V3amxLcU0xMTVRUGpnNGllWnJwSzRVbHBJQjQxZ3VkanpTNGhnMHU5UGEzWTBLZzFvaVZ5R3h0elZtdjhvNkM3a2tHV0JIS2swQ2RHRVdWeQ?oc=5",
+      "time": "Sun, 02 Aug 2026 01:34:52",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "费城半导体指数入熊之际：“Kimi时刻”刷屏华尔街！ - cls.cn",
+      "source": "财联社",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1UbzBZR1o3Mi04M0ZucW5tWC1yN3ctckM4bGc2LWs5ZWFvQldyS0FrR19mUlFjZUZ5REE3Z3ZuSngtdVMzVlVaeQ?oc=5",
+      "time": "Sat, 18 Jul 2026 07:00:00",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "새 역사 쓴 코스피, 8월엔 변동성 줄어들까[주간증시] - 에너지경제신문",
+      "source": "Google News KR",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoeUNPR2ZiODBLNU1QWG93YUZTcEJ6amJIbTFrWlBrVkRESjFmZFRrNWt0X0hPcm9OTEswM3lnQUtFN3VPZnBhZVRFX09ZR1JMNGUwYUJxT2FJalU?oc=5",
+      "time": "Sat, 01 Aug 2026 23:44:47",
+      "sentiment": "neutral"
+    },
+    {
+      "title": "악재 다 털었나…증권가 \"코스피, 8월 계단식 점진적 반등 전망\" - 연합뉴스",
+      "source": "Google News KR",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1lRjBPVGxsWlVSbHlmOC1kVVVIQ0lzYmZTSlVnTEJ5dTFaT21qN2NPa19kYlpmQXBqeE5XOGFVU0YzRzkxYmIwOU9oT0Q5YU52N0E1WHZmcVRrN2UtQ2FGWtIBYEFVX3lxTE1lRjBPVGxsWlVSbHlmOC1kVVVIQ0lzYmZTSlVnTEJ5dTFaT21qN2NPa19kYlpmQXBqeE5XOGFVU0YzRzkxYmIwOU9oT0Q5YU52N0E1WHZmcVRrN2UtQ2FGWg?oc=5",
+      "time": "Sat, 01 Aug 2026 21:05:01",
+      "sentiment": "bull"
     }
   ],
   "sources_used": [
