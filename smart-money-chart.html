@@ -70,7 +70,7 @@ new Chart(ctx,{
   data:{
     labels:labels,
     datasets:[
-      {label:'消息偏度',data:scaled,borderColor:'#3fb950',backgroundColor:function(ctx){var c=ctx.chart.ctx;var g=c.createLinearGradient(0,0,0,280);g.addColorStop(0,'rgba(63,185,80,0.15)');g.addColorStop(0.5,'rgba(63,185,80,0.03)');g.addColorStop(1,'rgba(248,81,73,0.08)');return g;},fill:true,tension:0.4,pointRadius:3,borderWidth:2.5,pointBackgroundColor:function(ctx){var v=bias[ctx.dataIndex];return v>0.3?'#3fb950':v<-0.3?'#f85149':'#8b949e';}},
+      {label:'周度净流($亿)',data:scaled,borderColor:'#3fb950',backgroundColor:function(ctx){var c=ctx.chart.ctx;var g=c.createLinearGradient(0,0,0,280);g.addColorStop(0,'rgba(63,185,80,0.15)');g.addColorStop(0.5,'rgba(63,185,80,0.03)');g.addColorStop(1,'rgba(248,81,73,0.08)');return g;},fill:true,tension:0.4,pointRadius:3,borderWidth:2.5,pointBackgroundColor:function(ctx){var v=bias[ctx.dataIndex];return v>0.3?'#3fb950':v<-0.3?'#f85149':'#8b949e';}},
       {label:'SOX涨跌%',data:sox,borderColor:'#58a6ff',tension:0.4,pointRadius:2.5,borderWidth:2,pointBackgroundColor:function(ctx){var v=sox[ctx.dataIndex];return v>3?'#58a6ff':v<-3?'#3a6fc4':'#8b949e';}},
       {label:'SK海力士%',data:sk,borderColor:'#d2991d',tension:0.4,pointRadius:2.5,borderWidth:2,borderDash:[5,3],pointBackgroundColor:function(ctx){var v=sk[ctx.dataIndex];return v>5?'#d2991d':v<-5?'#9a6a00':'#8b949e';}}
     ]
