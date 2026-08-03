@@ -53,41 +53,14 @@ SOX+8% 海力士+30% 涨停<br>
 <script>
 setTimeout(function(){
 var ctx=document.getElementById('c').getContext('2d');
-var labels=['7/8','7/9','7/10','7/13','7/14','7/15','7/16','7/17','7/20','7/21','7/22','7/23','7/24','7/27','7/28','7/29','7/30','7/31'];
-var sox=[-10,35,55,45,30,20,8,-20,-30,-25,20,10,-35,-25,-15,-8,30,50];
-var sk=[-10,25,80,125,155,175,183,163,133,108,128,138,103,78,63,55,85,135];
-var bias=[0,0.4,0.6,0.5,0.3,0.2,0.1,-0.3,-0.4,-0.3,0.2,0.1,-0.4,-0.3,-0.2,0,0.4,0.6];
-var evts=['外资转买','小幅净买','ADR上市','熔断','大反弹','继续反弹','回落','CXMT恐慌','四连买D1','四连买D2','GOOGL博弈','GOOGL盘后','FCF恐慌!','CXMT上市','DUV+熔断!','FOMC鹰派','暴力反弹!','涨停!'];
-var max=Math.max.apply(null,sox.map(Math.abs).concat(sk.map(Math.abs)));
-var scaled=bias.map(function(b){return b*max});
-
-// Mark divergence zones: where bias-sign disagrees with price
-// 7/22-24: bias going negative but was positive=top divergence
-// 7/29: extreme negative bias but SK decline slowing=bottom divergence
-
-new Chart(ctx,{
-  type:'line',
-  data:{
-    labels:labels,
-    datasets:[
-      {label:'消息偏度',data:scaled,borderColor:'#3fb950',backgroundColor:function(ctx){var c=ctx.chart.ctx;var g=c.createLinearGradient(0,0,0,280);g.addColorStop(0,'rgba(63,185,80,0.15)');g.addColorStop(0.5,'rgba(63,185,80,0.03)');g.addColorStop(1,'rgba(248,81,73,0.08)');return g;},fill:true,tension:0.4,pointRadius:3,borderWidth:2.5,pointBackgroundColor:function(ctx){var v=bias[ctx.dataIndex];return v>0.3?'#3fb950':v<-0.3?'#f85149':'#8b949e';}},
-      {label:'SOX涨跌%',data:sox,borderColor:'#58a6ff',tension:0.4,pointRadius:2.5,borderWidth:2,pointBackgroundColor:function(ctx){var v=sox[ctx.dataIndex];return v>3?'#58a6ff':v<-3?'#3a6fc4':'#8b949e';}},
-      {label:'SK海力士%',data:sk,borderColor:'#d2991d',tension:0.4,pointRadius:2.5,borderWidth:2,borderDash:[5,3],pointBackgroundColor:function(ctx){var v=sk[ctx.dataIndex];return v>5?'#d2991d':v<-5?'#9a6a00':'#8b949e';}}
-    ]
-  },
-  options:{
-    responsive:true,maintainAspectRatio:false,
-    interaction:{intersect:false,mode:'index'},
-    plugins:{
-      legend:{labels:{color:'#8b949e',font:{size:9},usePointStyle:true,padding:14,pointStyleWidth:8}},
-      tooltip:{callbacks:{label:function(ctx){var raw=[bias,sox,sk][ctx.datasetIndex][ctx.dataIndex];var lbls=['消息偏度','SOX%','SK%'];return lbls[ctx.datasetIndex]+': '+(raw>=0?'+':'')+raw.toFixed(1)+(ctx.datasetIndex>0?'%':'');},afterLabel:function(ctx){return '事件: '+evts[ctx.dataIndex];}}}
-    },
-    scales:{
-      x:{ticks:{color:'#8b949e',font:{size:8}},grid:{display:false}},
-      y:{ticks:{color:'#8b949e',font:{size:8},callback:function(v){return(v>=0?'+':'')+v.toFixed(0)+'%';}},grid:{color:'rgba(48,54,61,0.25)'}}
-    }
-  }
-});
-},300);
+var L=["2月","3月","4月","5月上","5月下","6月上","6月中","6月下","7月初","7/8","7/14","7/17","7/22","7/25","7/28","7/29","7/30","7/31"];
+var inflow=[5,35,55,45,30,20,8,0,0,0,20,10,0,0,0,0,30,50];
+var outflow=[-15,0,0,0,0,0,0,-20,-30,-25,0,0,-35,-25,-15,-8,0,0];
+var cumul=[-10,25,80,125,155,175,183,163,133,108,128,138,103,78,63,55,85,135];
+new Chart(ctx,{type:"bar",data:{labels:L,datasets:[
+{label:"流入($亿)",data:inflow,backgroundColor:"rgba(63,185,80,0.7)",borderColor:"#3fb950",borderWidth:1,borderRadius:2,stack:"s"},
+{label:"流出($亿)",data:outflow,backgroundColor:"rgba(248,81,73,0.7)",borderColor:"#f85149",borderWidth:1,borderRadius:2,stack:"s"},
+{label:"累计净流($亿)",data:cumul,borderColor:"#d2991d",tension:0.4,pointRadius:2,borderWidth:2.5,type:"line",yAxisID:"y1"}
+]},options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:"index"},plugins:{legend:{labels:{color:"#8b949e",font:{size:9},usePointStyle:true,padding:14}}},scales:{x:{stacked:true,ticks:{color:"#8b949e",font:{size:8},maxTicksLimit:12},grid:{display:false}},y:{stacked:true,position:"left",ticks:{color:"#8b949e",font:{size:8},callback:function(v){return(v>=0?"+":"")+"$"+v+"亿"}},grid:{color:"rgba(48,54,61,0.25)"}},y1:{position:"right",ticks:{color:"#d2991d",font:{size:8},callback:function(v){return"$"+v+"亿"}},grid:{display:false}}}});;
 </script>
 </body></html>
